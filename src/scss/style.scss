@@ -68,23 +68,31 @@ font-weight: 300;
 
 }
 .header-rigth-block__investor-title{
-    width: 400px;
-    right: 150px;
-    bottom: 0px;
+    width: 375px;
+    right: 155px;
+    bottom: -15px;
     text-align: right;
      display: none;
+     background-color: #FFFFFF;
+     color: #ED3037;
+     padding: 10px 10px 10px 10px;
+     border-radius: 10px;
 }
 .header-rigth-block__investor:hover .header-rigth-block__investor-title,
 .header-rigth-block__Partner:hover .header-rigth-block__investor-title2{
     display: inline;
+    
 }
 .header-rigth-block__investor-title2{
     width: 600px;
     right: 0px;
-    bottom: 0px;
+    bottom: -15px;
     text-align: right;
-     display: none;
-
+    display: none;
+    background-color: #FFFFFF;
+     color: #ED3037;
+     padding: 10px 15px 10px 0;
+     border-radius: 10px;
 }
 .main-content{
     margin: 0 auto;
