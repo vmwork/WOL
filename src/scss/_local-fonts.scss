@@ -1,0 +1,17 @@
+@mixin  font($f-name, $f-style, $f-weight, $f-url){
+	@font-face{
+		font-family: $f-name;
+		font-style: $f-style;
+		font-weight: $f-weight;
+		src: url($f-url) format('woff2');
+	
+	}}
+	
+
+
+@include font('RussoOne-Regular', regular, 400, '../fonts/RussoOne-Regular.woff2');
+@include font('Stalemate-Regular', regular, 400, '../fonts/Stalemate-Regular.woff2');
+@include font('Roboto-Regular', regular, 400, '../fonts/Roboto-Regular.woff2');
+@include font('Roboto-Bold', regular, 400, '../fonts/Roboto-Bold.woff2');
+
+
