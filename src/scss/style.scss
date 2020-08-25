@@ -152,6 +152,35 @@ height: 60px;
     line-height: 146.1%;
     color: #FFFFFF; 
 }
+.advantures__content-button{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    
+}
+.advantures-button{
+    width: 500px;
+    height: 100px;
+    color: #DF2027;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.advantures-button:hover{
+    background: #DF2027;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
 
 // -----------------------------Media
 
