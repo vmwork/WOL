@@ -8,10 +8,9 @@
 	}}
 	
 
-
-@include font('RussoOne-Regular', regular, 400, '../fonts/RussoOne-Regular.woff2');
-@include font('Stalemate-Regular', regular, 400, '../fonts/Stalemate-Regular.woff2');
-@include font('Roboto-Regular', regular, 400, '../fonts/Roboto-Regular.woff2');
-@include font('Roboto-Bold', regular, 400, '../fonts/Roboto-Bold.woff2');
-
+@include font('Avenir', regular, 300, '../fonts/Avenir-Light.woff2');
+@include font('Avenir', regular, 400, '../fonts/Avenir-Medium.woff2');
+@include font('Avenir', regular, 800, '../fonts/Avenir-Heavy.woff2');
+@include font('Avenir', regular, 900, '../fonts/Avenir-Black.woff2');
+ 
 
