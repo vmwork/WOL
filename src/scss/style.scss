@@ -14,19 +14,21 @@
 }
 .main-header{
     display: flex;
-    margin-left: 94px;
+    margin-left: 87px;
     color: #FFFFFF;
-    max-width: 1273px;
+    max-width: 1355px;
 }
 .header-left-block{
     display: flex;
 }
+
 .header-left-block h1{
-   margin-left: 26px; 
+   margin-left: 20px; 
    width: 283px;
    margin-top: 29px;
    font-size: 16px;
     line-height: 22px;
+    letter-spacing: 0.2px;
 }
 .header-left-block h1 p{
 font-weight: 800;
@@ -37,17 +39,22 @@ width: 253px;
 font-weight: 300;
 }
 .header-rigth-block{
+    margin-top: 22px;
     margin-left: auto;
 
     
+}
+.header-rigth-block span{
+    display: inline-block;
+    margin: 0 15px 0 10px;
 }
 .header-rigth-block button{
     background-color: transparent;
     border: none;
     color: #FFFFFF;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 22px;
     // margin-top: 53px;
     margin-top: 29px;
     cursor: pointer;
@@ -56,9 +63,7 @@ font-weight: 300;
     border-bottom: 1px solid #FFFFFF;
     
 }
-.header-rigth-block__Partner{
- margin-left: 77px;
-}
+
 .header-rigth-block{
     position: relative;
 }
@@ -109,15 +114,7 @@ font-weight: 300;
 .main-content__left-block{
     margin-top: 110px;
 }
-.main-content__left-block h2{
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 73px;
-    color: #FFFFFF;
-    margin-left: 86px;
-    letter-spacing: 0.6px;
 
-}
 .main-content__left-block img{
     margin-top: 10px;
 }
