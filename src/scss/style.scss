@@ -59,6 +59,33 @@ font-weight: 300;
 .header-rigth-block__Partner{
  margin-left: 77px;
 }
+.header-rigth-block{
+    position: relative;
+}
+.header-rigth-block__investor-title,
+.header-rigth-block__investor-title2{
+    position: absolute;
+
+}
+.header-rigth-block__investor-title{
+    width: 400px;
+    right: 150px;
+    bottom: 0px;
+    text-align: right;
+     display: none;
+}
+.header-rigth-block__investor:hover .header-rigth-block__investor-title,
+.header-rigth-block__Partner:hover .header-rigth-block__investor-title2{
+    display: inline;
+}
+.header-rigth-block__investor-title2{
+    width: 600px;
+    right: 0px;
+    bottom: 0px;
+    text-align: right;
+     display: none;
+
+}
 .main-content{
     margin: 0 auto;
     max-width: 1920px;
