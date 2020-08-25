@@ -147,9 +147,7 @@ color: #FFFFFF;
 .rigth-block__post1 p{
  margin-top: 90px;   
 }
-.rigth-block__post2 p{
-    margin-top: 50px;
-}
+
 .rigth-block__post1 span, .rigth-block__post2 span{
     // display: block;
     // font-weight: 300;
@@ -165,6 +163,30 @@ line-height: 131px;
 
 color: #FFFFFF;
 }
+.button-wol{
+    width: 268px;
+    height: 73px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #7B1522;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-footer button{
+    
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+     cursor: pointer;
+}
+.button-footer {
+    width: 268px;
+  display: flex;
+    justify-content: space-between;  
+    margin-top: 10px;
+   
+}
+
 .rigth-block__post2 span{
     width: 648px;
     
