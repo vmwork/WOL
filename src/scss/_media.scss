@@ -1,36 +1,26 @@
-@media(max-width:1440px){
-    .main-content__left-block h2{
-        font-size: 32px;
-    }
-    .adventires-item{
-        width: 320px;
+@media(min-width: 1921px){
+    .main-header-logo{
+    
+        margin-left: 24%;  
     }
 }
-@media(max-width:1366px){
-    .header-rigth-block{
-        margin-right: 50px;
+@media(max-width:1625px){
+    .main-header-logo{
+        margin-left: 100px; 
     }
-    .main-content__left-block h2{
-        font-size: 28px;
-    }
-    .adventires-item{
-        width: 380px;
+    .main-header__investor-or-partner{
+        margin-left: 100px;
     }
 }
-@media(max-width:1024px){
-    .rigth-block__post1 p, .rigth-block__post2 p{
-        font-size: 18px;
-        line-height: 38px;
-      
+@media(max-width:1250px){
+    .main-header-logo{
+        margin-left: 0px;   
     }
-    .rigth-block__post1 span, .rigth-block__post2 span{
-        font-size: 14px;
-        line-height: 29px;
-        width: 50%;
-   
+    .main-header__investor-or-partner{
+        margin-left: 10px;
+    }
+    .main-header__language{
+        margin-left: 5px;
     }
 
-    .adventires-item{
-        width: 450px;
-    }
 }

@@ -9,262 +9,206 @@
 //
 //-----------------------------------------------------------------------------------------------------------
 .header{
-    margin: 0 auto;
-    max-width: 1920px;
-}
-.main-header{
-    display: flex;
-    margin-left: 87px;
-    color: #FFFFFF;
-    max-width: 1355px;
-}
-.header-left-block{
-    display: flex;
-}
-
-.header-left-block h1{
-   margin-left: 20px; 
-   width: 283px;
-   margin-top: 29px;
-   font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.2px;
-}
-.header-left-block h1 p{
-font-weight: 800;
-}
-.header-left-block h1 span{
-display: block;
-width: 253px;
-font-weight: 300;
-}
-.header-rigth-block{
-    margin-top: 22px;
-    margin-left: auto;
-
-    
-}
-.header-rigth-block span{
-    display: inline-block;
-    margin: 0 15px 0 10px;
-}
-.header-rigth-block button{
-    background-color: transparent;
-    border: none;
-    color: #FFFFFF;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
-    // margin-top: 53px;
-    margin-top: 29px;
-    cursor: pointer;
-}
-.header-rigth-block button:hover{
-    border-bottom: 1px solid #FFFFFF;
-    
-}
-
-.header-rigth-block{
-    position: relative;
-}
-.header-rigth-block__investor-title,
-.header-rigth-block__investor-title2{
-    position: absolute;
-
-}
-.header-rigth-block__investor-title{
-    width: 305px;
-    right: 155px;
-    bottom: -15px;
-    text-align: right;
-     display: none;
-     background-color: #FFFFFF;
-     color: #ED3037;
-     padding: 10px 10px 10px 10px;
-     border-radius: 10px;
-     font-size: 16px;
-}
-.header-rigth-block__investor:hover .header-rigth-block__investor-title,
-.header-rigth-block__Partner:hover .header-rigth-block__investor-title2{
-    display: inline;
-    
-}
-.header-rigth-block__investor-title2{
-    width: 440px;
-    right: 0px;
-    bottom: -15px;
-    text-align: right;
-    display: none;
-    background-color: #FFFFFF;
-     color: #ED3037;
-     padding: 10px 15px 10px 0;
-     border-radius: 10px;
-     font-size: 16px;
-}
-
-.main-content{
-    margin: 0 auto;
-    max-width: 1920px;
-    display: flex;
-    color: #FFFFFF;
-}
-.main-content__left-block picture source{
-    display: none;
-}
-.main-content__left-block{
-    margin-top: 80px;
-}
-
-.main-content__left-block img{
-    margin-top: 0px;
-    margin-left: -15px;
-}
-.left-block__wol-img{
-    max-width: 100%;
-}
-.main-content__rigth-block{
-    margin-top: 25px;
-    margin-left: -12px; 
-}
-.rigth-block__post1 p, .rigth-block__post2 p{
-font-style: normal;
-font-weight: 300;
-font-size: 22px;
-line-height: 30px;
-color: #FFFFFF;
-}
-.rigth-block__post2 p{
-    margin-top: 30px;
-}
-.rigth-block__post1 p{
- margin-top: 90px;   
-}
-
-.rigth-block__post1 span, .rigth-block__post2 span{
-font-weight: 900;
-font-size: 63px;
-line-height: 87px;
-color: #FFFFFF;
-
-}
-.button-wol{
-    width: 268px;
-    height: 73px;
-    border: none;
-    color: #DF2027;;
-    background-color: #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 67px;
-    font-size: 18px;
-line-height: 25px;
-font-weight: 900;
-}
-.button-footer button{
-    border: none;
-    background-color: transparent;
-    color: #FFFFFF;
-     cursor: pointer;
-}
-.button-footer {
-    width: 268px;
-  display: flex;
-    justify-content: space-between;  
-    margin-top: 25px;
+   height:81.7px ; 
+   border-bottom: 0.836598px solid rgba(255, 255, 255, 0.5);
+   position: relative;
+   z-index: 10;
    
 }
-.button-wol-partner{
+.main-header{
+    margin: 0 auto;
+    display: flex;
+    color: #ffffff;
+   
+    
+}
+.main-header-logo{
+    display: flex;
+    margin-left: 317px;  
+}
+.main-header-logo h1{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-top: 16px;
+    margin-left: 13.5px;
+    letter-spacing: 0.25px;
+    width: 226px;
+
+}
+.main-header-logo span{
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    width: 190px;
+    letter-spacing: 0.0px;
+}
+.main-header button{
     border: none;
     background-color: transparent;
     color: #FFFFFF;
+}
+.main-header button:hover{
+    border-bottom: 0.699897px solid #FFFFFF;
+}
+.main-header__investor-or-partner{
+    margin-top: 29px;
+    margin-left: 240px;
+    min-width: 308px;
+}
+.main-header__investor-or-partner span{
+    margin-left: 15px;
+    margin-right: 18px;
+}
+.main-header__language{
+    margin-left: 85px;
+    border-left: 0.699897px solid rgba(255, 255, 255, 0.5);
+    height:81.7px; 
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+font-size: 16px;
+line-height: 22px;
+}
+.main-header .de{
+    margin-top: 18px;
+    border-bottom: 1px solid transparent;
+  
+}
+.en{
+    margin-top: 12px;
+  
+}
+.main-header__log-in{
+    position: relative;
+    width: 57px;
+    height:787px; 
+    background: #9F1922;
     margin-left: 10px;
-    cursor: pointer;
-
-}
-.rigth-block__post2 span{
-    width: 648px;
+  
     
+   
 }
-;
-.advantures{
-  width: 100%;
-  min-height: 245px;
-  background-color: #ED3037;
+.main-header__log-in button{
+    margin-top: 38px;
+    margin-left: 12px;
+  
 }
-.advantures__content{
-    max-width: 1800px;
-    margin: 0 auto;
-    color: #FFFFFF;
-    padding-bottom: 25px;
+.main-header__cart{
+    position: relative;
+    background: #7B1522;
+    height:787px;
+    flex-grow: 1;
 }
-.advantures-list{
-    max-width: 1800px;
-    
-        display: flex;
-        // justify-content: space-between;
-        flex-wrap: wrap;
+.line{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    height: 1px;
+    margin-top: 17px;
 }
-.adventires-item{
-    margin-top: 35px;
-    width: 240px;
+.line2{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    height: 1px;
+    margin-top: 15px;  
 }
-.adventires-item:last-child{
-    width: 380px; 
+.main-header__cart button{
+    margin-top: 37px;
+    margin-left: 16px;
 }
-.adventires-item{
-    margin-left: 35px;
-}
-.adventires-item p{
+.cart-count{
+    position: absolute;
+    top: 30px;
+    left: 33px;
     font-weight: 800;
-font-size: 18px;
-line-height: 25px;
-color: #FFFFFF;
-height: 60px;
-}
+    font-size: 12px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #DF2027;
+    text-align: center;
+    padding-top: 3px;
 
-.adventires-item span{
+}
+.price{
+    position: relative;
+    top: -5px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 146.1%;
-    color: #FFFFFF; 
-}
-.advantures__content-button{
-    position: relative;
-    max-width: 1800px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 100px;
-    padding-bottom: 100px;
-    
-}
-.advantures__content-button-title{
-    max-width: 300px;
- 
-}
-.advantures__content-button-title2{
-    max-width: 440px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: 5px;
+  
 
 }
-.advantures-button{
-    color: #DF2027;
-    border-radius: 4px;
+.sale-block{
+    display: flex;
+    margin-left: 241px;
+    margin-top: 60px;
+}
+.content-loker-img{
+   width: 838px;
+   height: 416px;
+}
+.sale-content{
+    color: #ffffff;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.sale-name div{
+font-weight: 900;
+font-size: 44px;
+line-height: 65px;
+color: #FFFFFF;
+}
+.sale-price p{
+    margin-top: 20px;
+}
+.sale-price div{
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+color: #FFFFFF;
+}
+.sale-button button{
+    width: 186px;
+    height: 54px;  
     background: #FFFFFF;
     border: none;
+    border-radius: 2.79959px;
+    color: #DF2027;
+    margin-top: 48px;
+    margin-left: 2px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+}
+.sale-button button:hover{
+    background: #DF2027;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;  
+    color: #FFFFFF;
+}
+.partner-toggle{
+    margin-left: 10px;
     cursor: pointer;
-    padding: 0 25px ;
-    margin-right: 50px;
-    border: 1px solid #DF2027;
 }
-.advantures-button:hover{
- border: 1px solid #FFFFFF;
- background-color: #DF2027;
- color: #FFFFFF;
- 
+.change-count{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #EFEFEF;  
+    margin-top: 14px;
+    display: flex;
+    width: 186px;
+    margin-left: 4px;
+    cursor: pointer;
+    justify-content: space-between;
 }
-
-
-
-
 
 
 
