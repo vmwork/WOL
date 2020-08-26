@@ -256,7 +256,7 @@ line-height: 146.1%;
  
 }
 .advantages-content{
-    width: 840px;
+    width: 860px;
     overflow: hidden;
 
 }
@@ -268,13 +268,40 @@ line-height: 146.1%;
 }
 
 .advantages__arrows{
-    width: 840px;
+    position: relative;
+}
+.arrows__line1{
+    position: relative;
+    width: 824px;
     overflow: hidden;
     margin-top: 10px;
     border: 1px solid #ffffff;
     opacity: 0.3;
 }
-
+.arrows__line2{
+    position: relative;
+    top: -12px;
+    left: 412px;
+    left: 0;
+    width: 412px;
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid #ffffff;
+    opacity: 1;
+    transition: 2s;
+}
+.arrows{
+    position: relative;
+    left: 833px;
+    bottom: 20px;
+}
+.arrows img{
+    cursor: pointer;
+}
+.arrow-left img{
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
 // -----------------------------Media
 
 @import 'media'
