@@ -215,6 +215,7 @@ color: #FFFFFF;
     z-index: 2;
     margin-top: -20px;
     margin-left: 317px; 
+
   
    
 }
@@ -333,6 +334,42 @@ line-height: 146.1%;
 .arrow-left{
   opacity: 0.3;  
 }
+
+.myloker24{
+    position: relative;
+    margin-top: 65px;
+    z-index: 10;
+}
+.myloker24-rigth-block{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.myloker24-rigth-block-img{
+    max-width: 100%;
+}
+.myloker24-left-block{
+    width: 992px;
+    height: 732px;
+    position: absolute;
+    background: rgba(223, 37, 37, 0.8);
+    margin-top: -2px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // -----------------------------Media
 
 @import 'media'
