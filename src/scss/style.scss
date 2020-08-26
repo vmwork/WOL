@@ -88,13 +88,15 @@ line-height: 22px;
     height:787px; 
     background: #9F1922;
     margin-left: 10px;
-  
     
    
 }
 .main-header__log-in button{
-    margin-top: 38px;
-    margin-left: 12px;
+     margin-top: 38px;
+    // margin-bottom: 8px;
+    margin-left: 14px;
+    // border: 1px solid green;
+    
   
 }
 .main-header__cart{
@@ -104,10 +106,12 @@ line-height: 22px;
     flex-grow: 1;
 }
 .line{
+    position: absolute;
     width: 100%;
     background: rgba(255, 255, 255, 0.5);
     height: 1px;
-    margin-top: 17px;
+    top: 81px;
+    
 }
 .line2{
     width: 100%;
@@ -214,10 +218,7 @@ color: #FFFFFF;
     position: relative;
     z-index: 2;
     margin-top: -20px;
-    margin-left: 317px; 
-
-  
-   
+    margin-left: 317px;
 }
 .advantages-list{
     display: flex;
@@ -348,12 +349,12 @@ line-height: 146.1%;
     max-width: 100%;
 }
 .myloker24-left-block{
-    width: 992px;
+    width: 52%;
     height: 732px;
     position: absolute;
     background: rgba(223, 37, 37, 0.8);
     margin-top: -2px;
-    padding-left: 317px;
+    padding-left: 16.5%;
 }
 .myloker24-left-block__title{
     margin-top: 116px;
@@ -437,7 +438,19 @@ color: #FFFFFF;
     margin-top: 5px;
   
 }
-
+.countries{
+    width: 1920px;
+    height: 463px;
+    margin: 0 auto;
+    background-image: url('../images/back-country.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -5px;
+    
+}
+.countries-list{
+    display: flex;
+}
 
 
 

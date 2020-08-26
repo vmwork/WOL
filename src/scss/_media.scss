@@ -43,7 +43,31 @@
         margin-top: 100px;
         
      }
+     .advantages-slider{
+         margin-top: 40px;
+        margin-left: 20px;
+    }
+    .myloker24-left-block{
+        padding-left: 5%;
+    }
+    .myloker24-left-block__title{
+        margin-top: 16px;
+    }
 
+
+}
+@media (min-width:1024px) and (max-width:1366px){
+    .myloker24-left-block h2{
+          font-size: 36px;
+          line-height: 40px;
+        }
+        .myloker24-left-block__title2{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 10px;
+        color: #FFFFFF;
+        }
 }
 @media(min-width: 1366px){
     .content-loker-img{
@@ -54,6 +78,16 @@
      .content-loker-img img{
         width: 100% ;
      }
+     .advantages-slider{
+        margin-top: 0px;
+       margin-left: 50px;
+   }
+   .myloker24-left-block{
+    padding-left: 5%;
+}
+.myloker24-left-block__title{
+    margin-top: 16px;
+}
 }
 @media(min-width: 1440px){
     .content-loker-img{
@@ -64,6 +98,11 @@
      .content-loker-img img{
         width: 100% ;
      }
+     .advantages-slider{
+   
+        margin-top: -20px;
+    }
+     
 }
 
 @media(min-width:1600px){
@@ -75,6 +114,16 @@
      .content-loker-img img{
         width: 100% ;
      }
+     .advantages-slider{
+        margin-left: 80px;
+        margin-top: -20px;
+    }
+    .myloker24-left-block{
+        padding-left: 10.5%;
+    }
+    .myloker24-left-block__title{
+        margin-top: 56px;
+    }
 }
 @media(min-width:1920px){
     .content-loker-img{
@@ -85,11 +134,27 @@
      .content-loker-img img{
         width: 100% ;
      }
+     .advantages-slider{
+        position: relative;
+        z-index: 2;
+        margin-top: -20px;
+        margin-left: 317px;
+    }
+    .myloker24-left-block{
+        padding-left: 16.5%;
+    }
+    .myloker24-left-block__title{
+        margin-top: 116px;
+    }
+  
+   
    
 }
 @media(min-width:1921px){
   .advantages-slider{
          width: 1300px;
          margin: 0 auto;
+         margin-top: -20px;
      } 
+     
 }
