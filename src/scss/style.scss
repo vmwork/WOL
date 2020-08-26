@@ -390,8 +390,49 @@ color: #FFFFFF;
 .myloker24-item span{
     display: block;
     max-width: 233px;
-}
+    font-size: 14px;
+line-height: 19px;
 
+color: #FFFFFF;
+}
+.myloker24-item:first-child{
+    order: 1;
+    margin-top: 35px; 
+}
+.myloker24-item:first-child span{
+    margin-left: 10px;
+}
+.myloker24-item:nth-child(2){
+    margin-top: 30px;
+    order: 3;
+}
+.myloker24-item:nth-child(2) span{
+    margin-left: 15px;
+    margin-top: 3px;
+}
+.myloker24-item:nth-child(3){
+    order: 5;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+.myloker24-item:nth-child(4){
+    margin-top: 20px;
+    margin-left: 32px;
+    order: 2;
+}
+.myloker24-item:nth-child(4) span{
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.myloker24-item:nth-child(5){
+    order: 4;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+.myloker24-item:nth-child(5) span{
+    margin-top: 5px;
+  
+}
 
 
 
