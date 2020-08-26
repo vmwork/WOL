@@ -12,7 +12,7 @@
    height:81.7px ; 
    border-bottom: 0.836598px solid rgba(255, 255, 255, 0.5);
    position: relative;
-   z-index: 10;
+ 
    
 }
 .main-header{
@@ -209,8 +209,16 @@ color: #FFFFFF;
     cursor: pointer;
     justify-content: space-between;
 }
-
-
+.advantages-slider{
+    position: relative;
+    z-index: 2;
+    margin-top: -20px;
+}
+.advantages-list{
+    display: flex;
+    color: #ffffff;
+    display: none;
+}
 
 
 
