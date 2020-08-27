@@ -66,4 +66,13 @@ const arrowButtonSlider = document.querySelectorAll('.arrow'),
                   })   
         }
         changeLanguage()
+
+        function partnerMode(){
+
+        }
+        partnerMode()
+        function investorMode(){
+            
+        }
+        investorMode()
 })();
