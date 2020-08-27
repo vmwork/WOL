@@ -608,28 +608,37 @@ color: #CF2222;
 }
 .How-is-work h2 span{
 font-weight: 500;
+
 font-size: 22px;
 line-height: 30px;
 
 color: #CF2222;
+
+}
+.how-is-works__list .how-is-works__item span{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+
+color: #000000;
 }
 .How-is-work div{
     width: 235px;
-    margin: 0 auto;
+    margin-left: 515px;
     font-weight: 500;
 font-size: 18px;
 line-height: 25px;
 background: #CF2222;
 color: #FFFFFF;
 padding: 2px 5px 0 10px;
-margin-top: 40px;
+margin-top: 45px;
 }
 .how-is-works__list{
-    
     width: 1283px;
-    margin: 0 auto;
-    display: flex;
     margin-top: 42px;
+    margin-left: -10px;
+    display: flex;
     justify-content: space-between;
 }
 .how-is-works__item{
@@ -666,7 +675,7 @@ color: #DE2525;
    margin-left: 5px;
 }
 .how-is-works__item:first-child p{
-    margin-top: 40px;
+    margin-top: 35px;
 }
 .how-is-works__item:first-child span{
    width: 209px;    
@@ -674,14 +683,14 @@ color: #DE2525;
 }
 .how-is-works__item:nth-child(2){
     margin-left: 90px;
-    margin-top: 10px;
+    margin-top: 0px;
  }
  .how-is-works__item:nth-child(2):after{
      top: 40px;
      left: 125px;
  }
  .how-is-works__item:nth-child(2) p{
-     margin-top: 35px;
+     margin-top: 40px;
  }
  .how-is-works__item:nth-child(2) span{
     width: 209px;    
@@ -690,7 +699,7 @@ color: #DE2525;
  }
  .how-is-works__item:nth-child(3){
     margin-left: 35px;
-    margin-top: 15px;
+    margin-top: 10px;
  }
  .how-is-works__item:nth-child(3):after{
     top: 37px;
@@ -707,7 +716,7 @@ color: #DE2525;
  }
  .how-is-works__item:nth-child(4){
     margin-left: 40px;
-    margin-top: 15px;
+    margin-top: 10px;
  }
  .how-is-works__item:nth-child(4):after{
     top: 37px;
@@ -724,7 +733,7 @@ color: #DE2525;
  }
  .how-is-works__item:nth-child(5){
     margin-left: 25px;
-    margin-top: 10px;
+    margin-top: 5px;
  }
  .how-is-works__item:nth-child(5):after{
     display: none;;
@@ -820,10 +829,7 @@ line-height: 145.1%;
 color: #000000;
 margin-top: 10px;
 }
-.footer-agb{
 
-
-}
 .footer-agb button{
     background-color: transparent;
     border: none;
@@ -852,9 +858,7 @@ margin-top: 10px;
     color: #FFFFFF; 
     
 }
-.footer-contact{
 
-}
 .contact-item{
     margin-left: 153px;
     margin-top: -5px;
