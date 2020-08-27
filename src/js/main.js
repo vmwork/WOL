@@ -41,4 +41,30 @@ const arrowButtonSlider = document.querySelectorAll('.arrow'),
                 });
             });
         });
+
+        function openLanguageList(){
+            const openButtonLanguageList = document.querySelector('.language__arrow-down'),
+                  languageList = document.querySelector('.language-list');
+            
+
+                  openButtonLanguageList.addEventListener('click', () => {
+                    languageList.classList.toggle('hidden')
+                  })
+        }
+        openLanguageList()
+        function changeLanguage(){
+            const choseLanguageButton = document.querySelectorAll('.chose-language'),
+                  choosenLanguage = document.querySelector('.language__wrap picture source'),
+                  choosLanguage = document.querySelector('.language__arrow-down img');
+                  console.log(choosenLanguage.srcset)
+                  choseLanguageButton.forEach(item => {
+                  item.addEventListener('click', () => {
+                  choosenLanguage.srcset = item.previousSibling.srcset;
+                  document.querySelector('.language-list').classList.toggle('hidden')
+                    })
+                  })   
+
+          
+        }
+        changeLanguage()
 })();
