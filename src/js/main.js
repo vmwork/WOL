@@ -21,27 +21,28 @@ const arrowButtonSlider = document.querySelectorAll('.arrow'),
                 
             })
         })
-        document.querySelectorAll('a[href^="#"').forEach(link => {
+        // плавный скроллинг ----------------------------
+        // document.querySelectorAll('a[href^="#"').forEach(link => {
 
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
+        //     link.addEventListener('click', function(e) {
+        //         e.preventDefault();
         
-                let href = this.getAttribute('href').substring(1);
+        //         let href = this.getAttribute('href').substring(1);
         
-                const scrollTarget = document.getElementById(href);
+        //         const scrollTarget = document.getElementById(href);
         
-                const topOffset = document.querySelector('.scrollto').offsetHeight;
-                // const topOffset = 0; // если не нужен отступ сверху 
-                const elementPosition = scrollTarget.getBoundingClientRect().top;
-                const offsetPosition = elementPosition - topOffset;
+        //         const topOffset = document.querySelector('.scrollto').offsetHeight;
+        //         // const topOffset = 0; // если не нужен отступ сверху 
+        //         const elementPosition = scrollTarget.getBoundingClientRect().top;
+        //         const offsetPosition = elementPosition - topOffset;
         
-                window.scrollBy({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            });
-        });
-
+        //         window.scrollBy({
+        //             top: offsetPosition,
+        //             behavior: 'smooth'
+        //         });
+        //     });
+        // });
+// плавный скроллинг END----------------------------
         function openLanguageList(){
             const openButtonLanguageList = document.querySelector('.language__arrow-down'),
                   languageList = document.querySelector('.language-list');
@@ -54,17 +55,15 @@ const arrowButtonSlider = document.querySelectorAll('.arrow'),
         openLanguageList()
         function changeLanguage(){
             const choseLanguageButton = document.querySelectorAll('.chose-language'),
-                  choosenLanguage = document.querySelector('.language__wrap picture source'),
-                  choosLanguage = document.querySelector('.language__arrow-down img');
-                  console.log(choosenLanguage.srcset)
+                  choosenLanguage = document.querySelector('.language__wrap picture source');
+                 
+                
                   choseLanguageButton.forEach(item => {
                   item.addEventListener('click', () => {
                   choosenLanguage.srcset = item.previousSibling.srcset;
                   document.querySelector('.language-list').classList.toggle('hidden')
                     })
                   })   
-
-          
         }
         changeLanguage()
 })();
