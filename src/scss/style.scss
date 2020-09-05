@@ -445,10 +445,16 @@ justify-content: center;
     margin-top: 40px;
     padding-bottom: 230px!important;
 }
-.empty-cart h2{
+.empty-cart h2, .full-cart h2{
     font-size: 50px;
     font-weight: 900;
     color: #DF2525;
+    
+}
+.full-cart {
+margin-top: 40px;
+padding-left: 3px!important;
+min-height: 475px!important;
 }
 .empty-cart p{
     padding-top: 10px;
@@ -464,6 +470,106 @@ justify-content: center;
     margin-top: 25px;
     border-radius: 3px;
 
+}
+.table-bordered td{
+    border: 1px solid rgba(223, 37, 37, 0.5)!important;
+}
+.full-cart-table{
+margin-top: 35px;
+margin-left: 5px;
+
+
+}
+.table-wrapper{
+    max-width: 1300px;
+    position: relative;
+}
+.img-fluid{
+    display: flex;
+    // justify-content: center;
+    // border: 1px solid rgba(223, 37, 37, 0.5)!important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.full-cart__product{
+display: flex;
+margin-top: 37px;
+justify-content: space-between;
+max-width: 280px;
+margin-left: 37px;
+}
+.full-cart__product span{
+    line-height: 22px;
+    color: #DF2525;
+    font-size: 22px;
+}
+.safe-button__minus, .safe-button__plus{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 112px;
+}
+.safe-button__minus span, .safe-button__plus span{
+color: #DF2525;
+font-size: 22px;
+
+}
+.count-safe{
+    color: #DF2525;
+    font-size: 22px;   
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.table-button-delete{
+    position: absolute;
+    top: -33px;
+    right: 10px;
+    color: rgba(122, 21, 34, 0.5);;
+}
+.full-cart__footer{
+    display: flex;
+    max-width: 1300px;
+    justify-content: space-between;
+}
+.summa, .full-cart__footer-checkout{
+    display: flex;
+    margin-top: 10px;
+    
+}
+.summa{
+    align-items: baseline;
+}
+.summa div{
+    font-size: 22px;
+}
+.summa span{
+    font-size: 44px;
+    font-weight: 900;
+}
+.full-cart__footer-checkout div,
+.full-cart__footer-checkout span{
+   color: #DF2525;
+   font-size: 22px;
+   margin-top: 20px;
+   margin-right: 5px;
+
+}
+
+.full-cart__footer-checkout-button{
+  width: 220px;
+  height: 54px;
+  background-color: #DF2525;  
+  border-radius: 3px;
+  color: #ffffff;
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 16px;
+  margin-right: 15px;
+  margin-top: 5px;
 }
 // -----------------------------Media
 
