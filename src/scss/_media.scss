@@ -29,12 +29,100 @@
     }
     .main-header__investor-or-partner{
         margin-left: 0;
+        font-size: 14px;
+        line-height: 26px;
+        width: 125px;
+        padding-top: 15px;
     }
     .main-header-logo h1 {
-        margin-right: 5%;
+        margin-right: 0%;
+        margin-left: 10px;
+        font-size: 12px;
+        width: 200px;
     }
     .main-header__cart span{
         display: block;
+    }
+    .footer-logo{
+        margin: 0;
+    }
+    .footer-link {
+        margin-left: 30px;
+    }
+    .agb-item{
+        min-width: 140px;
+       
+    }
+    .main-footer ul a, .contact-item-addres span {
+        max-width: 150px;
+        font-size: 12px;
+    }
+    .impressum-atenschutz, .social {
+        width: 300px;
+        margin: 0;
+    }
+ 
+}
+
+@media (max-width:767px){
+    .main-header-logo h1{
+       width: 200px;
+    }
+    .main-header .row{
+        height: 100%;
+        color: #ffffff;
+        background-color: #DF2525;
+    }
+    .main-header-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .header-right{
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-header__investor-or-partner{
+        flex-grow: 3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-footer .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-footer .col-4{
+        max-width: 475px;
+        
+        
+    }
+    .footer-logo{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-agb, .footer-link, .footer-contact{
+        max-width: 475px; 
+        min-width: 320px;
+        display: flex;
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-footer .col-2{
+        max-width: 475px;   
+    }
+    .agb-item, .link-item, .contact-item{
+      width: 200px;
+    }
+    .impressum-atenschutz{
+        margin-left: 0;
+        max-width: 320px;
+    }
+    .social{
+        margin-right: 0;
     }
  
 }
