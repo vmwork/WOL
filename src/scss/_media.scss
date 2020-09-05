@@ -1,0 +1,39 @@
+@media (max-width:1680px){
+    .footer-agb{
+        margin-left: 15px;
+        
+    }
+    .footer-link{
+        margin-left: 50px;
+     }
+     .impressum-atenschutz{
+         width: 500px;
+     }
+     .main-footer ul a{
+         font-size: 14px;
+     }
+     .contact-item-addres span{
+        font-size: 14px;
+        max-width: 200px;  
+     }
+     .advantages-slider-wrapper.col-10{
+         flex: 0 0 78%;
+     }
+}
+@media (max-width:1280px){
+    .impressum-atenschutz{
+        width: 800px;
+    }
+    .advantages-slider-wrapper{
+        max-width: 100%;;
+    }
+    .main-header__investor-or-partner{
+        margin-left: 0;
+    }
+    .main-header-logo h1 {
+        margin-right: 5%;
+    }
+    .main-header__cart span{
+        display: block;
+    }
+}
