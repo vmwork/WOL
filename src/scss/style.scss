@@ -38,7 +38,8 @@ align-items: center;
     width: 230px;
 margin-left: 40px;
 // margin-right: 172px;
-margin-right: 16.5%;
+// margin-right: 16.5%;
+margin-right: 18%;
 font-size: 12px;
 padding-top: 18px;
 font-weight: normal;
@@ -67,7 +68,7 @@ line-height: 16px;
 }
 .main-header__investor-or-partner{
     width: 306px;
-    margin-left: 10.5%;
+    margin-left: 8.5%;
     padding-top: 28px;
     
 }
@@ -648,6 +649,18 @@ line-height: 36px;
     background-color: #ffffff; 
     color: #DF2525;
     border: 2px solid #DF2525;
+}
+.partner-dashboard-container{
+    background: #E5E5E5;  
+    margin-bottom: 165px;
+}
+.partner-dashboard{
+    max-width: 1285px!important;
+    min-height: 1623px!important;
+    background: #FFFFFF;
+box-shadow: 0px 40px 48px rgba(76, 76, 86, 0.04), 0px 24px 24px rgba(134, 134, 140, 0.03);
+border-radius: 15px;
+margin-top: 52px;
 }
 
 // -----------------------------Media
