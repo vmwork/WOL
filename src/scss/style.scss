@@ -412,6 +412,9 @@ justify-content: center;
  .social{
      justify-content: flex-end;
  }
+ .breadcrumb{
+     margin-top: 15px;
+ }
 
  .breadcrumb-item+.breadcrumb-item::before {
     content: ""!important;
@@ -452,12 +455,12 @@ justify-content: center;
 }
 .empty-cart-img{
     position: relative;
-    top: -50px;
-    left: 25px;
+    top: -25px;
+    left: 0px;
 }
 .empty-cart{
     padding-left: 3px!important;
-    margin-top: 40px;
+    margin-top: 75px;
     padding-bottom: 230px!important;
 }
 .empty-cart h2, .full-cart h2{
@@ -467,12 +470,12 @@ justify-content: center;
     
 }
 .full-cart {
-margin-top: 40px;
+margin-top: 75px;
 padding-left: 3px!important;
 min-height: 475px!important;
 }
 .empty-cart p{
-    padding-top: 10px;
+    padding-top: 25px;
     font-size: 22px;
     font-weight: 600;
     color: #DF2525;
@@ -482,7 +485,7 @@ min-height: 475px!important;
     height: 54px;
     color: #ffffff;
     background-color: #DF2525;
-    margin-top: 25px;
+    margin-top: 45px;
     border-radius: 3px;
 
 }
@@ -509,35 +512,37 @@ border-collapse: collapse;
 }
 .full-cart__product{
 display: flex;
-margin-top: 37px;
+margin-top: 20px;
 justify-content: space-between;
 max-width: 280px;
-margin-left: 37px;
+margin-left: 87px;
 }
 .full-cart__product span{
-    line-height: 22px;
+    line-height: 54px;
     color: #DF2525;
     font-size: 22px;
+    
 }
 .safe-button__minus, .safe-button__plus{
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:  0 auto;
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
-    width: 112px;
+    width: 115px;
 }
 .safe-button__minus span, .safe-button__plus span{
 color: #DF2525;
 font-size: 22px;
+line-height: 36px;
 
 }
 .count-safe{
     color: #DF2525;
     font-size: 22px;   
     display: block;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
+    width: 45px;
     
 }
 .table-button-delete{
@@ -553,7 +558,7 @@ font-size: 22px;
 }
 .summa, .full-cart__footer-checkout{
     display: flex;
-    margin-top: 10px;
+    margin-top: 50px;
     
 }
 .summa{
@@ -608,7 +613,7 @@ font-size: 22px;
     align-items: flex-start;
     background-color: #eaeaea;
     border-radius: 4px;
-    margin-top: 45px;
+    margin-top: 55px;
 }
 .products__product img{
     margin-top: 20px;
@@ -623,7 +628,7 @@ font-size: 22px;
 
 }
 .products__footer{
-    margin-top: 25px;
+    margin-top: 35px;
 }
 .products__footer span{
     color: #DF2525;
