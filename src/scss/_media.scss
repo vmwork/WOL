@@ -61,6 +61,36 @@
         width: 300px;
         margin: 0;
     }
+    .img-fluid{
+        width: 100%;
+    }
+    .advantages-slider-wrapper.col-10 {
+  
+        flex: 0 0 85%;
+        margin-top: 30px;
+    }
+    .empty-cart-img{
+        top: 100px;
+    }
+ 
+}
+@media (max-width:1100px){
+    .advantages-slider{
+        margin-left: 150px;
+    }
+    .advantages-content{
+        width: 600px;
+    }
+    .arrows__line1{
+        width: 412px;
+    }
+    .arrows__line2{
+        width: 206px;
+    }
+    .arrows{
+        left: 425px;
+        bottom: 20px;
+    }
  
 }
 
@@ -123,6 +153,36 @@
     }
     .social{
         margin-right: 0;
+    }
+    .advantages-slider-wrapper.col-10 {
+        display: none;
+    }
+    .sale-content{
+        margin-top: 25px;
+        margin-left: 20px;
+        max-width: 300px;
+    }
+    .sale-price div, .sale-name div{
+        font-size: 36px;
+    }
+    .sale-button .jetzt-button{
+        width: 125px;
+    }
+    .partner-toggle{
+        font-size: 12px;
+    }
+    .change-count button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .empty-cart h2{
+        font-size: 36px;
+    }
+    .empty-cart p{
+        font-size: 14px;
+    }
+    .empty-cart-img{
+        top: 150px;
     }
  
 }
