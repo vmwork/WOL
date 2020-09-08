@@ -1112,6 +1112,106 @@ color: #828282;
 .revenue-nav-year__item span, .revenue-nav-monts__item span{
     padding-left: 50px;
 }
+.checkout .col-9{
+    padding: 0;
+}
+.checkout{
+margin-top: 60px;
+min-height: 1057px;
+}
+.checkout h2{
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 146.1%;
+    color: #DF2525; 
+    // margin-bottom: 25px;
+}
+.form-checkout h3{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 226.19%;
+    margin-bottom: 20px;
+    color: #DF2525;  
+}
+.form-checkout label{
+    font-weight: 500;
+font-size: 16px;
+line-height: 226.19%;
+color: #0C1823;
+display: block;
+width: 220px;
+margin-right: 35px;
+}
+.form-checkout input{
+    display: block;
+    width: 220px;
+height: 61px;
+
+background: #FFFFFF;
+border: 1px solid rgba(12, 24, 35, 0.2);
+box-sizing: border-box;
+border-radius: 2px;
+padding-left: 32px;
+
+}
+.form-checkout::placeholder{
+    font-size: 14px;
+    line-height: 226.19%;
+   
+    color: #0C1823;
+    opacity: 0.6;  
+}
+.information, .contact-information, .adress-information, .accept-conditions{
+    display: flex;
+    margin-bottom: 41px;
+    flex-wrap: wrap;
+}
+.accept-conditions{
+    margin-bottom: 30px;
+}
+.accept-conditions label{
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+width: 630px;
+color: #272727;
+margin-top: 15px;
+margin-left: 10px;
+}
+.accept-conditions input{
+    width: 34px;
+    height: 34px;
+    
+    background: #EDEDED;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px; 
+    margin-top: 10px;
+}
+.form-checkout .form-submit{
+width: 188px;
+height: 54px;
+font-weight: 900;
+font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+background-color: #DF2027;
+border-radius: 2.79959px;
+border: 1px solid transparent;
+margin-bottom: 50px;
+}
+.form-checkout .form-submit:hover{
+    color: #DF2027;
+    background-color: #ffffff;
+    border: 1px solid #DF2027;
+
+}
+input[type="checkbox"] {
+   
+    background: #DF2027;
+    border-radius: 5;
+    
+  }
 // -----------------------------Media
 
 @import 'media'
