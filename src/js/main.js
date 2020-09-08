@@ -32,36 +32,47 @@
                     })
                 })
 
-                function openLanguageList(){
-                    const openButtonLanguageList = document.querySelector('.language__arrow-down'),
-                          languageList = document.querySelector('.language-list');
-                    
-        
-                          openButtonLanguageList.addEventListener('click', () => {
-                            languageList.classList.toggle('hidden')
-                          })
-                }
-                openLanguageList()
-                function changeLanguage(){
-                    const choseLanguageButton = document.querySelectorAll('.chose-language'),
-                          choosenLanguage = document.querySelector('.language__wrap picture source');
-                         
-                        
-                          choseLanguageButton.forEach(item => {
-                          item.addEventListener('click', () => {
-                          choosenLanguage.srcset = item.previousSibling.srcset;
-                          document.querySelector('.language-list').classList.toggle('hidden')
-                            })
-                          })   
-                }
-                changeLanguage()
-        
-                function partnerMode(){
-        
-                }
-                partnerMode()
-                function investorMode(){
-                    
-                }
-                investorMode()
+            function openRevenueNav(){
+              const revenueButton = document.querySelectorAll('.revenue-button'),
+              revenueYearMenu = document.querySelector('.revenue-nav-year__item'),
+               revenuemontsMenu = document.querySelector('.revenue-nav-monts__item');
+              revenueButton.forEach(item => {
+                
+                item.addEventListener('click', () =>{
+               
+                  if (item.classList.contains('revenue-nav-year__button')){
+                     revenueYearMenu.classList.toggle('hidden');
+                     revenuemontsMenu.classList.add('hidden');
+                  }
+                  if (item.classList.contains('revenue-nav-monts__button')){
+                    revenuemontsMenu.classList.toggle('hidden');
+                    revenueYearMenu.classList.add('hidden');
+                 }
+                })
+              })
+            }
+               openRevenueNav()
+               function choseYear() {
+                const  revenueChangeYear = document.querySelectorAll('.revenue-nav-year__item');
+                const yearTitle = document.querySelector('.revenue-nav-year__button span')
+                revenueChangeYear.forEach(item => {
+                  item.addEventListener('click', (e) => {
+                    yearTitle.textContent = e.target.textContent 
+                   
+                  })
+                })
+               } 
+               choseYear()
+               function choseMonts() {
+                const revenueChangeMonts = document.querySelectorAll('.revenue-nav-monts__item');
+                const montsTitle = document.querySelector('.revenue-nav-monts__button span')
+                  revenueChangeMonts.forEach(item => {
+                    item.addEventListener('click', (e) => {
+                      montsTitle.textContent = e.target.textContent 
+                     
+                    })
+                  })
+              } 
+              choseMonts()
+            
         })();
