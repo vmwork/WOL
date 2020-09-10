@@ -74,5 +74,22 @@
                   })
               } 
               choseMonts()
+
+              function scrollTeam(){
+                const buttonScroll = document.querySelector('.employeers-scroll'),
+                      scrollList = document.querySelector('.employeers-list');
+
+                      buttonScroll.addEventListener('mousedown', (e) =>{
+                        console.dir(buttonScroll)
+                        console.log(e.clientY)
+                         
+                      })
+
+
+
+
+
+              }
+              scrollTeam()
             
         })();

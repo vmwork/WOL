@@ -136,12 +136,76 @@ line-height: 16px;
     background-color: #7b1522;
     flex-grow: 3;
 }
-.main-header__investor-or-partner .menu:hover .sub-menu{
+.menu{
+	display:flex;
+	justify-content:space-between
+}
+.menu li a:hover{
+	border-bottom: 1px solid transparent;
+}
+.main-header__investor-or-partner{
+    position: relative;
+	padding-top: 18px;
+	margin-right: 15.5%;
+	margin-left: 0;
+}
+.main-header__investor-or-partner .menu-item-has-children:hover  .sub-menu {
     display: block;
   }
-  .main-header__investor-or-partner .menu .sub-menu{
+  .main-header__investor-or-partner .sub-menu{
      display: none;
+     position: absolute;
+     top: 82px;
+     background-color: #df2525;
+     z-index: 9999999;
+     min-width: 100px;
+     
   }
+  .menu-item-type-custom{
+    min-width: 100px;
+    height: 64px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .menu-item-object-page{
+    min-width: 100px;
+  }
+  .menu-item-type-custom:hover{
+      border-bottom: 4px solid #7B1522;
+      
+
+  }
+  
+  .sub-menu li{
+      margin-top: 10px;
+        padding-bottom: 10px;
+  }
+  .sub-menu li:last-child a{
+      padding-right: 5px;
+      border-bottom: none;
+  }
+  .sub-menu li:last-child{
+    border-bottom: none;
+  }
+  .sub-menu li {
+    border-bottom: 4px solid transparent;;
+  }
+  .sub-menu li:hover{
+ 
+    border-bottom: 4px solid #7B1522;
+  }
+
+
+
+
+
+
+
+    .content-loker-img img{
+        width: 776px!important;
+        max-height: 316px;
+        margin-right: 20px;
+        }
 .cart-count{
     position: absolute;
     top: 30%;
@@ -213,7 +277,7 @@ line-height: 16px;
     position: relative;
     z-index: 2;
     margin-top: -5px;
-     margin-left: -10px;
+     margin-left: -80px;
 }
 .advantages-list{
     display: flex;
@@ -333,6 +397,8 @@ line-height: 146.1%;
 .advantages-slider-wrapper{
     display: flex;
 justify-content: center;
+margin-top: 50px;
+margin-bottom: 50px;
 
 }
 .main-footer{
@@ -666,6 +732,9 @@ line-height: 36px;
     background: #FAFAFA;  
     margin-bottom: 165px;
     
+}
+.partner-dashboard-container .col-2{
+    // flex: 0 0 auto;
 }
 .partner-dashboard{
     max-width: 1285px!important;
@@ -1211,6 +1280,134 @@ input[type="checkbox"] {
     background: #DF2027;
     border-radius: 5;
     
+  }
+
+ 
+
+  .team-header{
+      width: 1133px;
+      height: 77px;
+      margin: 0 auto!important;
+      margin-top: 49px!important;
+      background-color: #E7E7E7;
+      border-radius: 4px;
+  }
+  .team-header-list{
+      display: flex;
+      width: 1049px;
+      margin: 0 auto;
+      margin-top: 27px;
+      justify-content: space-between;
+  }
+  .team-header-list li{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 163.42%;
+    color: #0C1823;
+  }
+  .employeers{
+    width: 1133px;
+      
+      margin: 0 auto!important;
+      border-radius: 4px;  
+  }
+  .employeers-wrapper{
+      position: relative;
+      max-height: 977px;
+      overflow: hidden;
+  }
+  .employeers-list{
+      position: relative;
+      top: 0px;
+      transition: 2s;
+  }
+  .employeers-item{
+     border-bottom: 1px solid #9593A0; 
+     background: #FAFAFA;
+  }
+  .employeers-item__data {
+    display: flex;
+    width: 1049px;
+    height: 88px;
+    margin: 0 auto;
+    align-items: center;
+    // justify-content: space-between;
+    
+  }
+  .employeers-item__data li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163.42%;
+    color: #0C1823;
+
+  }
+  .item__data-name{
+      width: 325px;
+  }
+  .item__data-level{
+      width: 320px;
+  }
+  .data-level-icon{
+    min-width: 50px;
+    width: 50px;
+   
+  }
+  .data-direct{
+    color: #54DD13!important;  
+  }
+  .data-level-1{
+    color: #DF2525!important;
+  }
+  .data-level-2{
+    color: #CB9600!important;
+  }
+  .team-pagination{
+      justify-content: center;
+      margin-top: 25px;
+      margin-bottom: 73px;
+  }
+  .team-pagination-list{
+      display: flex;
+  }
+  .team-pagination-list li{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 122.92%;
+    margin-right: 19px;
+    color: #0C1823; 
+    cursor: pointer;
+  }
+  .pagination-item__arrow-left{
+
+      transform: rotate(90deg);
+  }
+  .pagination-item__arrow-right{
+  
+      transform: rotate(-90deg);
+  }
+  .employeers{
+      position: relative;
+  }
+  .employeers-scroll-wrapper{
+      position: absolute;
+      height: 978px;
+      width: 11px;
+      background-color: rgba(223, 37, 37, 0.3);
+      top: 0;
+      right: 0;
+      z-index: 100500;
+      
+  }
+  .employeers-scroll{
+    position: absolute;
+    height: 180px;
+    width: 11px;
+    background-color: rgba(223, 37, 37, 1);
+    top: 0;
+    right: 0;
+    z-index: 100501;
+    cursor: pointer;
+    transition: 2s;
   }
 // -----------------------------Media
 
