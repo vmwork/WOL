@@ -982,9 +982,27 @@ color: #606060;
 color: #262628;
 }
 .pool-block{
-    margin-top: 85px; 
+    padding-top: 85px; 
     padding-left: 30px;  
     border-bottom: 1px solid #d6d6d6; 
+    position: relative;
+}
+.pool-bloked{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(243, 243, 243, 0.6);
+    z-index: 250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.0120588em;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 28px;
+    color: #1E1E1E;
 }
 .pool-block h2{
     letter-spacing: 0.0120588em;
@@ -1325,21 +1343,44 @@ input[type="checkbox"] {
      border-bottom: 1px solid #9593A0; 
      background: #FAFAFA;
   }
+  .employeers-item:hover{
+    
+    background: #FFFFFF;
+ }
   .employeers-item__data {
     display: flex;
-    width: 1049px;
+    // width: 1049px;
+    padding-left: 49px;
     height: 88px;
     margin: 0 auto;
     align-items: center;
     // justify-content: space-between;
     
   }
+
   .employeers-item__data li{
     font-weight: 400;
     font-size: 16px;
     line-height: 163.42%;
     color: #0C1823;
 
+  }
+.open-level{
+    background: rgba(223, 37, 37, 0.05);
+    border-top: 1px solid #9593A0; 
+    opacity: 1;
+    transition: 1s;
+  }
+  .level.closet{
+      opacity: 0;
+      transition: 0.5s;
+      height: 0;
+      
+  }
+  .level{
+    opacity: 1;
+    transition: 1.5s;
+    height: 100%;
   }
   .item__data-name{
       width: 325px;
@@ -1348,9 +1389,39 @@ input[type="checkbox"] {
       width: 320px;
   }
   .data-level-icon{
+      position: relative;
     min-width: 50px;
     width: 50px;
+    
    
+  }
+  .level-is-absent{
+      position: absolute;
+      width: 200px;
+      color: #df2525;
+      left: -75px;
+      bottom: -15px;
+      animation: showWrong 1s;
+
+  }
+  @keyframes showWrong {
+      0% {
+          opacity: 0;
+      }
+      50% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  .level-icon{
+    transform: rotate(0deg);
+   
+    transition: 1.5s;
+  }
+  .active-cicle{
+      fill: #DF2525;
   }
   .data-direct{
     color: #54DD13!important;  
@@ -1406,8 +1477,8 @@ input[type="checkbox"] {
     top: 0;
     right: 0;
     z-index: 100501;
-    cursor: pointer;
-    transition: 2s;
+    cursor: grab;
+    transition: 0.5s;
   }
 // -----------------------------Media
 

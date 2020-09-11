@@ -76,14 +76,86 @@
               choseMonts()
 
               function scrollTeam(){
+                try {
                 const buttonScroll = document.querySelector('.employeers-scroll'),
-                      scrollList = document.querySelector('.employeers-list');
-
-                      buttonScroll.addEventListener('mousedown', (e) =>{
-                        console.dir(buttonScroll)
-                        console.log(e.clientY)
-                         
+                      scrollLine = document.querySelector('.employeers-scroll-wrapper'),
+                      scrollList = document.querySelector('.employeers-list'),
+                      employeersWrapper = document.querySelector('.employeers-wrapper'),
+                      body = document.querySelector('body');
+                    
+                      scrollList.addEventListener('mouseover', (e) => {
+                        
                       })
+                      scrollList.addEventListener('mouseout', (e) => {
+                       
+                      })
+
+
+                      let step = 0;
+                      scrollList.addEventListener('wheel', (e) => {
+                     
+
+                      if(e.deltaY >  0 ){
+                        step = scrollList.style.top.split('px')[0]
+                        if(scrollList.style.top.split('px')[0] < -460 ){
+                        
+                        } else {
+                          step -= 150;
+                          scrollList.style.top = step + 'px';
+                          buttonScroll.style.top = -step + 'px';
+                        }
+                      }
+
+                      if(e.deltaY <  0){
+                        step = scrollList.style.top.split('px')[0]
+                        
+                        if(scrollList.style.top.split('px')[0] <= 0){
+                          scrollList.style.top = 0 + 'px';
+                          buttonScroll.style.top = 0 + 'px';
+                        } else {
+                          step += 150;
+                          scrollList.style.top = step + 'px'
+                        }
+                      }
+                      });
+
+                      const dataLevelIconButton = document.querySelectorAll('.data-level-icon');
+                      
+                      dataLevelIconButton.forEach(item => {
+                        item.addEventListener('click', (e) => {
+                          
+                          const openLevelElement = item.parentNode.nextElementSibling;
+                         
+                          if(openLevelElement != null 
+                            && openLevelElement.classList.contains('level')  
+                            && openLevelElement.childElementCount > 0){
+                            if (openLevelElement.classList.contains('closet')){
+                              openLevelElement.classList.remove('closet')
+                            item.children[0].children[0].style.transform = 'rotate(-270deg)';
+                            item.children[0].children[0].firstElementChild.classList.add('active-cicle')
+                            } else {
+                              openLevelElement.classList.add('closet')
+                              item.children[0].children[0].style.transform = 'rotate(0deg)';
+                              item.children[0].children[0].firstElementChild.classList.remove('active-cicle')
+                            }
+                            
+
+                          } else {
+                            console.log(item.children[0])
+                            const noLevel = document.createElement('div');
+                            noLevel.classList.add('level-is-absent');
+                            noLevel.textContent = 'keine Daten verfügbar';
+                            item.children[0].appendChild(noLevel);
+
+                          }
+                        })
+                      })
+                    
+                    }
+                      catch {}
+
+                
+       
 
 
 
