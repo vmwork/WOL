@@ -67,7 +67,7 @@ line-height: 16px;
    
 }
 .main-header__investor-or-partner{
-    width: 306px;
+   width: 406px;
     margin-left: 8.5%;
     padding-top: 28px;
     
@@ -158,19 +158,23 @@ line-height: 16px;
      top: 82px;
      background-color: #df2525;
      z-index: 9999999;
-     min-width: 100px;
+   min-width: 100px;
+   max-width: 150px;
+   text-align: left;
      
   }
-  .menu-item-type-custom{
+  .menu li{
     min-width: 100px;
     height: 64px;
     padding-top: 20px;
     text-align: center;
+    min-width: 100px;
+   max-width: 150px;
   }
   .menu-item-object-page{
     min-width: 100px;
   }
-  .menu-item-type-custom:hover{
+  .menu li:hover{
       border-bottom: 4px solid #7B1522;
       
 
@@ -179,6 +183,8 @@ line-height: 16px;
   .sub-menu li{
       margin-top: 10px;
         padding-bottom: 10px;
+        text-align: left;
+        padding-left: 10px;
   }
   .sub-menu li:last-child a{
       padding-right: 5px;
