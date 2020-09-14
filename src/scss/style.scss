@@ -1268,7 +1268,7 @@ padding-left: 32px;
     bottom: 25px;
     width: 20px;
     height: 10px;
-    
+    cursor: pointer;
     background-image: url(../images/arrow-balck-down.png);
     background-repeat: no-repeat;
     z-index: 60;
@@ -1502,6 +1502,109 @@ input[type="checkbox"] {
     cursor: grab;
     transition: 0.5s;
   }
+
+
+  .form-checkout .upload-file{
+  display: none;
+   
+  }
+  .form-checkout .upload-file-label{
+    display: block;
+    width: 220px;
+    height: 61px;
+    background: #fff;
+    border: 1px solid rgba(12,24,35,.2);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-left: 32px;
+    font-size: 14px;
+    line-height: 226.19%;
+   padding-top: 15px;
+    color: rgba(12, 24, 35, 0.6);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+   
+}
+.upload-file-label img{
+margin-right: 10px;
+margin-top: 3px;
+}
+
+.widjet-block-content{
+    position: relative;
+}
+.text-center {
+    text-align: center;
+}
+.widjet-block-content{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+}
+.widjet-block-content:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #000;
+    opacity: .7;
+    
+}
+.widjet-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: -50vh;
+    top: 0;
+    left: 0;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    z-index: 0;
+    opacity: 0;
+    background-color: #1c1c1c;
+    transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.widjet-block .container{
+    position: relative;
+    z-index: 2;
+}
+.widjet-block .container p,
+.widjet-block .container h2,
+.widjet-block .container strong{
+    color: #fff;
+}
+.widjet-block .container h2 strong{
+font-size: 50px;
+}
+
+.widjet-block .container .pb20 p{
+    margin-top: 20px;
+    color: #bbb!important;
+}
+.feature-right{
+    margin-top: 50px;
+}
+.feature-left-content h4 strong {
+    font-size: 22px;
+    letter-spacing: -1px;
+    padding-top: 10px!important;
+   
+}
+.feature-right img{
+    margin-bottom: 10px;
+}
+.feature-left-content  p{
+    padding-top: 10px!important;
+}
 // -----------------------------Media
 
 @import 'media'

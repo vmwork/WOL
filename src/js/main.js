@@ -81,12 +81,7 @@
                       employeersWrapper = document.querySelector('.employeers-wrapper'),
                       body = document.querySelector('body');
                     
-                      scrollList.addEventListener('mouseover', (e) => {
-                        
-                      })
-                      scrollList.addEventListener('mouseout', (e) => {
-                       
-                      })
+             
                       
                       
                       let step = 0;
@@ -192,6 +187,28 @@
               }
               scrollTeam()
 
- 
-            
+              function showUploadDocument(){
+                const uploadFile = document.querySelectorAll('.upload-file');
+                
+                uploadFile.forEach(item => {
+                  item.addEventListener('change', () =>{
+                    console.dir(item.nextElementSibling.children[0])
+                    console.log(item.nextElementSibling)
+                    item.nextElementSibling.children[0].textContent = item.files[0].name.substr(0, 10) + '...'
+                  
+                  })
+                })
+                
+              }
+              showUploadDocument()
+              function widjetParalax(){
+                const widjet = document.querySelector('.widjet-block');
+                const widjetBackgraound = document.querySelector('.widjet-wrapper');
+                
+                widjet.addEventListener('wheel', () => {
+                  
+                })
+              }
+              widjetParalax()
+              
         })();
