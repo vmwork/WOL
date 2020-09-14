@@ -1,7 +1,5 @@
 (function () {
 
-
-
         const arrowButtonSlider = document.querySelectorAll('.arrow'),
               arrowButtonRight = document.querySelector('.arrow-rigth'),
               arrowButtonLeft = document.querySelector('.arrow-left'),
@@ -93,34 +91,61 @@
                       
                       let step = 0;
                       scrollList.addEventListener('wheel', (e) => {
-                       
-                        // let scrollListHeigth = scrollList.offsetHeight
-
-                      if(e.deltaY >  0 ){
+                        let scrollListHeigth = scrollList.offsetHeight - employeersWrapper.offsetHeight;
+                        // console.log('sdf')
+                        if(e.deltaY >  0 ){
+                         
+                         
+                          if(scrollList.style.top.split('px')[0] < scrollListHeigth * -1){
+                          
+                            buttonScroll.style.top = buttonScroll.style.top
+                            buttonScroll.style.top = 800 + 'px';
                       
-                        step = scrollList.style.top.split('px')[0]
-                       
-                        if(scrollList.style.top.split('px')[0] < -460 ){
+                          } else {
+                            step += 100 * -1;
+                            scrollList.style.top = step + 'px';
+                            buttonScroll.style.top = -step + 'px';
+                            console.log(step)
+                            console.log(scrollListHeigth)
+                            console.log('down')
+                            if(buttonScroll.style.top.split('px')[0] >= 800){
+                              buttonScroll.style.top = 800 + 'px'; 
+                             
+                            }
+                          }
+                         
                         
-                        } else {
-                          step -= 150;
-                          scrollList.style.top = step + 'px';
-                          buttonScroll.style.top = -step + 'px';
                         }
-                      }
 
-                      if(e.deltaY <  0){
-                        step = scrollList.style.top.split('px')[0]
-                        
-                        if(scrollList.style.top.split('px')[0] <= 0){
-                          scrollList.style.top = 0 + 'px';
-                          buttonScroll.style.top = 0 + 'px';
-                        } else {
-                          step += 150;
-                          scrollList.style.top = step + 'px'
+
+                        if(e.deltaY <  0 ){
+                          if(scrollList.style.top.split('px')[0] >= 0){
+                            scrollList.style.top = 0 + 'px';
+                            buttonScroll.style.top = 0 + 'px';
+                           
+                          } else {
+                            console.log(step)
+                            step += 100;
+                          scrollList.style.top = step + 'px';
+                          buttonScroll.style.top += buttonScroll.style.top.split('px')[0] - 200 + 'px';
+                          console.log('up')
+                          console.log(step)
+                          }
+                          
+
+                         
                         }
-                      }
+
+                        
+                        
+                        
+
+
+
+
                       });
+
+
 
                       const dataLevelIconButton = document.querySelectorAll('.data-level-icon');
                       
@@ -166,5 +191,7 @@
 
               }
               scrollTeam()
+
+ 
             
         })();
