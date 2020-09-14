@@ -158,8 +158,8 @@ line-height: 16px;
      top: 82px;
      background-color: #df2525;
      z-index: 9999999;
-   min-width: 100px;
-   max-width: 150px;
+   width: 100px;
+  
    text-align: left;
      
   }
@@ -168,8 +168,8 @@ line-height: 16px;
     height: 64px;
     padding-top: 20px;
     text-align: center;
-    min-width: 100px;
-   max-width: 150px;
+    width: 100px;
+
   }
   .menu-item-object-page{
     min-width: 100px;
@@ -637,6 +637,7 @@ line-height: 36px;
     display: flex;
     max-width: 1300px;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .summa, .full-cart__footer-checkout{
     display: flex;

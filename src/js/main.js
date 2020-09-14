@@ -89,14 +89,17 @@
                       scrollList.addEventListener('mouseout', (e) => {
                        
                       })
-
-
+                      
+                      
                       let step = 0;
                       scrollList.addEventListener('wheel', (e) => {
-                     
+                       
+                        // let scrollListHeigth = scrollList.offsetHeight
 
                       if(e.deltaY >  0 ){
+                      
                         step = scrollList.style.top.split('px')[0]
+                       
                         if(scrollList.style.top.split('px')[0] < -460 ){
                         
                         } else {
