@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/_head.html')
+
+<body>
+  
+    @@include('components/_header.html')
+  
+
+    @@include('components/_safe-partner.html')
+    @@include('components/_productSlider.html')
+  
+  
+    @@include('components/_footer.html')
+  
+    <div class="container-fluid modal-login">
+    
+        <div class="col-9 col-sm-12 col-md-12 col-xl-9">
+           
+            <div class="row">
+              <div class="col-5 col-sm-5 col-md-1  col-xl-4">
+                
+              </div>
+              <div class="col-4 col-sm-12 col-md-10 col-xl-7 login-block">
+                  <div class="row">
+                     <div class="col-6 login-left-block">
+                    <H3 class="text-center ">Wenn Sie bereits auf unserer Seite registriert sind</H3>
+                  
+                  <form action="#.php">
+                    <label for="login-email"> 
+                      Benutzername oder E-Mail-Adresse
+                  </label>
+                  <input type="text" id="login-email" required> 
+
+                  <label for="login-password"> 
+                    Passwort
+                </label>
+                <input type="password" id="login-password" required> 
+                <input type="submit" value="Anmelden">
+                  </form>
+                  <a href="#">Passwort vergessen</a>
+                   
+</div>
+                  <div class="col-6 login-right-block">
+                    <H3 class="text-center">Bitte senden Sie Ihre Kontakte und wir bieten Ihnen einen Partner, der Ihnen hilft, unser gemeinsames Geschäft zu führen</H3> 
+                    <form action="#.php">
+                        <label for="contact-name"> 
+                            Vorname, Nachname
+                        </label>
+                        <input type="text" id="contact-name" required> 
+                        <label for="contact-tel"> 
+                            Telefon 
+                        </label>
+                        <input type="text" id="contact-tel" required> 
+                        <label for="contact-email"> 
+                            E-Mail 
+                        </label>
+                        <input type="text" id="contact-email" required>
+                        <input type="submit" value="Senden"> 
+                    </form>
+
+
+
+                  </div> 
+                  </div>
+                  
+                
+              </div>
+            </div>
+          </div>
+       
+      
+      </div>
+
+
+
+    
+    @@include('components/_scripts.html')
+ 
+</body> 
+
+</html>

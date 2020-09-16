@@ -1831,6 +1831,82 @@ line-height: 24px;
     top: 60px;
     left: 0px; 
 }
+.modal-login{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, .8);
+    z-index: 965;
+}
+.login-block{
+    margin-top: 10%;
+    background-color: #ffffff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    // border: 4px solid #7b1522;
+    border-radius: 15px;
+}
+.login-left-block{
+    // border-right: 1px solid #DF2027;
+    // border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 5px 1px rgba(223,37,37,0.7);
+    
+}
+.login-right-block {
+    border-left: 1px solid #DF2027;
+    border-bottom-left-radius: 50px; 
+    // border-top-left-radius: 50px;
+    box-shadow: 0px 5px 1px rgba(223,37,37,0.7);
+}
+.login-block h3{
+   
+    color: #0C1823;
+    font-weight: 900;
+font-size: 16px;
+line-height: 226.19%;
+min-height:  150px;
+}
+
+.login-left-block input, .login-right-block input{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    display: block;
+    height: 40px;
+    padding-left: 15px;
+     margin: 0 auto;
+     width: 80%;
+}
+.login-left-block label, .login-right-block label{
+    color: #0C1823;
+    font-weight: 500;
+font-size: 16px;
+line-height: 226.19%;
+
+}
+.login-left-block input[type="submit"], .login-right-block input[type="submit"]{
+   width: 80%;
+   height: 55px;
+   margin: 0 auto;
+   background-color: #DF2027;
+   color: #FFFFFF;
+   border: 1px solid #DF2027;
+   border-radius: 5px;
+   font-weight: 800;
+font-size: 16px;
+line-height: 22px;
+cursor: pointer;
+margin-top: 40px;
+margin-bottom: 20px;
+}
+.login-left-block input[type="submit"]:hover,
+ .login-right-block input[type="submit"]:hover{
+    background-color: #ffffff;
+    color: #DF2027;
+
+}
 // -----------------------------Media
 
 @import 'media'
