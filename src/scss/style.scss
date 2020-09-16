@@ -1861,7 +1861,8 @@ line-height: 24px;
     box-shadow: 0px 5px 1px rgba(223,37,37,0.7);
 }
 .login-block h3{
-   
+    max-width: 300px;
+    margin: 0 auto;
     color: #0C1823;
     font-weight: 900;
 font-size: 16px;
