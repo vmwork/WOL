@@ -1887,6 +1887,9 @@ font-size: 16px;
 line-height: 226.19%;
 
 }
+.login-left-block form div, .login-right-block form div{
+    min-height: 250px;
+}
 .login-left-block input[type="submit"], .login-right-block input[type="submit"]{
    width: 80%;
    height: 55px;
@@ -1902,6 +1905,7 @@ cursor: pointer;
 margin-top: 40px;
 margin-bottom: 20px;
 }
+
 .login-left-block input[type="submit"]:hover,
  .login-right-block input[type="submit"]:hover{
     background-color: #ffffff;
