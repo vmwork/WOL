@@ -31,42 +31,53 @@
                 })
 
             function openRevenueNav(){
-              const revenueButton = document.querySelectorAll('.revenue-button'),
-              revenueYearMenu = document.querySelector('.revenue-nav-year__item'),
-               revenuemontsMenu = document.querySelector('.revenue-nav-monts__item');
+              const revenueButton = document.querySelectorAll('.revenue-button')
+         
+              
               revenueButton.forEach(item => {
                 
                 item.addEventListener('click', () =>{
                
                   if (item.classList.contains('revenue-nav-year__button')){
-                     revenueYearMenu.classList.toggle('hidden');
-                     revenuemontsMenu.classList.add('hidden');
+                    item.children[2].classList.toggle('hidden');
+                    item.parentNode.children[1].children[2].classList.add('hidden');
                   }
                   if (item.classList.contains('revenue-nav-monts__button')){
-                    revenuemontsMenu.classList.toggle('hidden');
-                    revenueYearMenu.classList.add('hidden');
+                    item.children[2].classList.toggle('hidden');
+                    item.parentNode.children[0].children[2].classList.add('hidden');
                  }
                 })
               })
             }
                openRevenueNav()
+
+
+
+
+
+
+
+
+
+
                function choseYear() {
-                const  revenueChangeYear = document.querySelectorAll('.revenue-nav-year__item');
+                const  revenueChangeYear = document.querySelectorAll('.item--year');
                 const yearTitle = document.querySelector('.revenue-nav-year__button span')
                 revenueChangeYear.forEach(item => {
                   item.addEventListener('click', (e) => {
-                    yearTitle.textContent = e.target.textContent 
+                    // console.log(item.parentNode.parentNode.children[1].children[0])
+                    item.parentNode.parentNode.children[1].children[0].textContent  = e.target.textContent 
                    
                   })
                 })
                } 
                choseYear()
                function choseMonts() {
-                const revenueChangeMonts = document.querySelectorAll('.revenue-nav-monts__item');
+                const revenueChangeMonts = document.querySelectorAll('.item--monts');
                 const montsTitle = document.querySelector('.revenue-nav-monts__button span')
                   revenueChangeMonts.forEach(item => {
                     item.addEventListener('click', (e) => {
-                      montsTitle.textContent = e.target.textContent 
+                      item.parentNode.parentNode.children[1].children[0].textContent = e.target.textContent 
                      
                     })
                   })
@@ -85,9 +96,10 @@
                       
                       
                       let step = 0;
-                      scrollList.addEventListener('wheel', (e) => {
+                      if(scrollLine){
+                                     scrollList.addEventListener('wheel', (e) => {
                         let scrollListHeigth = scrollList.offsetHeight - employeersWrapper.offsetHeight;
-                        // console.log('sdf')
+                    
                         if(e.deltaY >  0 ){
                          
                          
@@ -100,9 +112,6 @@
                             step += 100 * -1;
                             scrollList.style.top = step + 'px';
                             buttonScroll.style.top = -step + 'px';
-                            console.log(step)
-                            console.log(scrollListHeigth)
-                            console.log('down')
                             if(buttonScroll.style.top.split('px')[0] >= 800){
                               buttonScroll.style.top = 800 + 'px'; 
                              
@@ -123,24 +132,14 @@
                             step += 100;
                           scrollList.style.top = step + 'px';
                           buttonScroll.style.top += buttonScroll.style.top.split('px')[0] - 200 + 'px';
-                          console.log('up')
-                          console.log(step)
                           }
-                          
 
-                         
                         }
-
-                        
-                        
-                        
-
-
-
-
                       });
 
 
+                      }
+         
 
                       const dataLevelIconButton = document.querySelectorAll('.data-level-icon');
                       
@@ -176,14 +175,6 @@
                     
                     }
                       catch {}
-
-                
-       
-
-
-
-
-
               }
               scrollTeam()
 
