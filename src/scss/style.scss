@@ -1916,6 +1916,34 @@ margin-bottom: 20px;
     display: block;
     margin-bottom: 10px;
 }
+.error{
+    color: #DF2027;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 40px 0;
+ 
+}
+.error h2{
+   
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+
+}
+.row.error-404{
+
+    margin: 40px 0;
+    justify-content: center;
+}
+.error-404 img{
+    border: 3px solid #DF2027;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+.error-404 span{
+    font-size: 120px;
+}
 // -----------------------------Media
 
 @import 'media'
