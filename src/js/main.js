@@ -192,38 +192,38 @@
                 
               }
               showUploadDocument()
-             function copyLinkReferal(){
-              const copyLinkButton = document.querySelector('.copy-link-button'),
-                    copyLinkText = document.querySelector('.copy-link-container'),
-                    copyLinkBlock = document.querySelector('.copy-link');
-try {
-copyLinkButton.addEventListener('click', () =>{
-  navigator.clipboard.writeText(copyLinkText.textContent)
-  .then(() => {
-    const linkIsCopy = document.createElement('div');
-    linkIsCopy.classList.add('link-is-copyed');
+//              function copyLinkReferal(){
+//               const copyLinkButton = document.querySelector('.copy-link-button'),
+//                     copyLinkText = document.querySelector('.copy-link-container'),
+//                     copyLinkBlock = document.querySelector('.copy-link');
+// try {
+// copyLinkButton.addEventListener('click', () =>{
+//   navigator.clipboard.writeText(copyLinkText.textContent)
+//   .then(() => {
+//     const linkIsCopy = document.createElement('div');
+//     linkIsCopy.classList.add('link-is-copyed');
     
-    linkIsCopy.textContent = 'Partner Link kopiert';
-     copyLinkBlock.appendChild(linkIsCopy);
-     const linkIsCopyed = document.querySelector('.link-is-copyed');
+//     linkIsCopy.textContent = 'Partner Link kopiert';
+//      copyLinkBlock.appendChild(linkIsCopy);
+//      const linkIsCopyed = document.querySelector('.link-is-copyed');
      
-     setTimeout(() => {
-      copyLinkBlock.removeChild(linkIsCopyed)
-     }, 1000)
+//      setTimeout(() => {
+//       copyLinkBlock.removeChild(linkIsCopyed)
+//      }, 1000)
 
-  })
-  .catch(err => {
-    console.log('', err);
-  });
+//   })
+//   .catch(err => {
+//     console.log('', err);
+//   });
 
-                    })
-}
-catch{
+//                     })
+// }
+// catch{
 
-}
+// }
                     
                     
-             }
-             copyLinkReferal()
+//              }
+//              copyLinkReferal()
               
         })();

@@ -1,0 +1,66 @@
+<div class="row step-1">
+    <div class="step-1__header">
+        <h2>Identity Verification (KYC)</h2>
+        <div class="step-1__header__steps">
+            <svg width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M109 54.5C109 84.5995 84.5995 109 54.5 109C24.4005 109 0 84.5995 0 54.5C0 24.4005 24.4005 0 54.5 0C84.5995 0 109 24.4005 109 54.5ZM10.6909 54.5C10.6909 78.6951 30.3049 98.3091 54.5 98.3091C78.6951 98.3091 98.3091 78.6951 98.3091 54.5C98.3091 30.3049 78.6951 10.6909 54.5 10.6909C30.3049 10.6909 10.6909 30.3049 10.6909 54.5Z" fill="#F8F8FA"/>
+                <path d="M109 54.5C109 47.343 107.59 40.256 104.851 33.6438C102.113 27.0315 98.0981 21.0235 93.0373 15.9627C87.9765 10.9019 81.9685 6.88745 75.3562 4.14856C68.744 1.40968 61.657 -3.12844e-07 54.5 0V10.6909C60.2531 10.6909 65.9499 11.824 71.265 14.0257C76.5802 16.2273 81.4097 19.4542 85.4777 23.5223C89.5458 27.5903 92.7727 32.4198 94.9743 37.735C97.176 43.0501 98.3091 48.7469 98.3091 54.5H109Z" fill="#DF2525"/>
+                <path d="M42.94 50.844L40.08 53.484L38.848 52.01L43.182 48.424H45.052V64H42.94V50.844ZM51.0299 64.968L49.4899 64.396L56.5299 47.456L58.0479 48.028L51.0299 64.968ZM65.698 60.568H59.054V58.412L65.258 48.424H67.81V58.72H70.01V60.568H67.81V64H65.698V60.568ZM65.698 50.932H65.654L60.902 58.72H65.698V50.932Z" fill="#DF2525"/>
+                </svg>
+                <div class="">
+                <h3>Identify verification</h3>
+                <p>Next step: Uploud your passport or ID</p></div>
+                
+        </div>
+    </div>
+    <form action="#.php">
+        <div class="step-1__main-information">
+            <h3>1. Main information</h3>
+            <div class="step-1__main-information__wrapper">
+            <div class="step-1__main-information-left-block">
+                <label for="main-information-name">Vorname
+                    <input id="main-information-name" type="text" placeholder="Alex">
+                </label>
+                <label for="main-information-lastname">Nachname
+                    <input id="main-information-lastname" type="text" placeholder="Socol">
+                </label>
+                <label for="main-information-date">Geburtsdatum
+                    <input id="main-information-date" type="date" value="2020-06-01" min="2020-01-01" max="2030-12-31">
+                </label>
+                <label for="main-information-city">Citizenship
+                    <input id="main-information-city" type="text" placeholder="Germany">
+                </label>
+            </div>
+            <div class="step-1__main-information-right-block">
+                <h4>Gender</h4>
+                <input name="male" type="radio" id="male" checked>
+                <label class="information-right-block--male" for="male">Male</label>
+                <input name="male" type="radio" id="famale">
+                <label class="information-right-block--female"  for="famale">Male</label>
+            </div>
+        </div>
+        </div>
+        <div class="step-1__main-information--passport">
+            <h3>2. Information about your passport or ID</h3>
+            <div class="main-information--passport__wrapper">
+            <label for="main-information-passportid">ID number
+                <input id="main-information-passportid" type="text" placeholder="LO23456">
+            </label>
+            <label for="main-information-passport-issued">Issued by
+                <input id="main-information-passport-issued" type="text" placeholder="Socol">
+            </label>
+            <label for="main-information-passport-date-issued">Date of issue
+                <input id="main-information-passport-date-issued" type="date" value="2020-06-01" min="2020-01-01" max="2030-12-31">
+            </label>
+            <label for="main-information-passport-date-expire">Date of expire
+                <input id="main-information-passport-date-expire" type="date" value="2020-06-01" min="2020-01-01" max="2030-12-31">
+            </label>
+        </div>
+        </div>
+        <div class="next-step">
+            <input type="submit" value="Next step">
+        </div>
+        
+    </form>
+    
+</div>

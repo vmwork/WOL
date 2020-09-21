@@ -746,7 +746,7 @@ line-height: 36px;
 
 .partner-dashboard{
     max-width: 1285px!important;
-    
+    margin: 0 auto;
     background: #FFFFFF;
 box-shadow: 0px 40px 48px rgba(76, 76, 86, 0.04), 0px 24px 24px rgba(134, 134, 140, 0.03);
 border-radius: 15px;
@@ -890,18 +890,18 @@ margin-top: 37px;
 }
 .copy-link-container{
     width: 252px;
-    background: #F8F8F8;
+    background: #f8f8f8;
     border-radius: 4px;
     height: 40px;
     margin-top: 27px;
     padding-left: 20px;
     padding-top: 10px;
-    letter-spacing: -0.02em;
+    letter-spacing: -.02em;
     font-size: 16px;
     line-height: 19px;
-color: #808080;
-border-top-left-radius: 4px;
-border-bottom-left-radius: 4px;  
+    color: grey;
+    border: none;
+    padding-bottom: 10px;  
 }
 .copy-link-button{
     background: #DF2525;
@@ -1943,6 +1943,304 @@ margin-bottom: 20px;
 }
 .error-404 span{
     font-size: 120px;
+}
+.woocommerce-MyAccount-navigation{
+    padding-left: 15%;
+    margin-top: 100px;
+  }
+  .woocommerce-MyAccount-content{
+    padding-right: 15%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .step-1{
+      padding-left: 72px;
+  }
+  .step-1__header{
+      display: flex;
+      margin-top: 56px;
+      width: 100%;
+    
+      flex-wrap: wrap;
+  }
+  .step-1__header h2{
+    color: #DF2525;
+    letter-spacing: 0.0120588em;
+    font-weight: 500;
+font-size: 44px;
+line-height: 60px;
+width: 610px;
+  }
+  .step-1 h3{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 226.19%;
+    color: #DF2525; 
+  }
+  .step-1__header .step-1__header__steps{
+      display: flex;
+  }
+  .step-1__header h3{
+    letter-spacing: 0.0120588em;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #0C1823;  
+    margin-left: 30px;
+    margin-top: 13px;
+  }
+  .step-1__header p{
+    letter-spacing: 0.0120588em;
+    font-size: 18px;
+    line-height: 25px;
+    color: #9593A0;
+    margin-left: 30px;
+  }
+  .step-1 input:not([type="radio"]){
+    width: 343.43px;
+height: 61px; 
+background: #FFFFFF;
+border: 1px solid rgba(12, 24, 35, 0.2);
+box-sizing: border-box;
+border-radius: 2px; 
+  }
+  .step-1__main-information{
+      margin-top: 10px;
+  }
+.step-1__main-information__wrapper,
+.main-information--passport__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.step-1__main-information-left-block{
+    max-width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.step-1__main-information-left-block input,
+.step-1__main-information--passport input{
+    padding-left: 34px;
+}
+
+.step-1__main-information-left-block input,
+.step-1__main-information--passport input {
+    display: block;
+    margin-top: 10px;
+    color: #9593a0;
+    
+}
+.step-1__main-information-left-block label{
+    margin-top: 22px;
+}
+.step-1__main-information-right-block{
+    margin-left: 59px;
+    margin-top: 13px;
+}
+.step-1__main-information-right-block h4{
+    font-weight: 900;
+font-size: 16px;
+line-height: 226.19%;
+color: #0C1823;
+margin-bottom: 15px;
+}
+.step-1 input[type="radio"]{
+display: none;
+
+
+}
+.step-1__main-information-right-block label{
+    position: relative;
+    padding-left: 40px;
+    margin-right: 15px;
+    color: #9593a0;
+    font-weight: normal;
+font-size: 16px;
+line-height: 226.19%;
+cursor: pointer;
+}
+.information-right-block--male:before,
+.information-right-block--female:before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: 2px solid #DF2525;
+    top: -2px;
+    left: 0;
+}
+#male:checked + label:after,
+#famale:checked + label:after{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 3px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: #DF2525;
+}
+.step-1__main-information--passport{
+    margin-top: 42px;
+    margin-bottom: 36px;
+}
+.step-1__main-information--passport input{
+    margin-right: 60px;
+   
+}
+.step-1__main-information--passport label{
+   margin-top: 22px;  
+}
+.next-step{
+    text-align: center;
+}
+.next-step input{
+    background-color: #DF2027!important;
+border-radius: 2.79959px;
+color: #FFFFFF;
+font-weight: 900;
+font-size: 16px;
+line-height: 22px;
+margin-bottom: 150px;
+border: 1px solid #DF2027;
+cursor: pointer;
+}
+.next-step input:hover{
+    background-color: #fff!important;
+    border-radius: 2.79959px;
+    color: #DF2027; 
+    border: 1px solid #DF2027;
+}
+.step-2__wrapper{
+    display: flex;
+
+    margin-top: 26px;
+}
+.step-2__wrapper h3{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 226.19%;
+    color: #0C1823;  
+    margin-bottom: 16px;
+    
+}
+.step-2__wrapper p{
+    font-size: 22px;
+    line-height: 155.69%;
+    color: #0C1823; 
+    margin-bottom: 10px; 
+}
+.step-2__header{
+    margin-bottom: 42px;
+}
+#upload-files{
+    display: none;
+}
+.step-2__upload--files{
+    position: relative;
+    display: block;
+    width: 724px;
+    height: 129px;
+    border: 1px solid #9593A0;
+box-sizing: border-box;
+padding-top: 40px;
+padding-left: 48px;
+font-weight: 500;
+font-size: 22px;
+line-height: 226.19%;
+color: #DF2525;
+cursor: pointer;
+    
+}
+.step-2__upload svg{
+    position: absolute;
+    right: 66px;
+    top: 46px;
+}
+.step-2__upload--preview ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 76px;
+    vertical-align: top;
+}
+.step-2__upload--preview button{
+   display: block;
+}
+.step-2__wrapper .next-step{
+    text-align: right;
+}
+.step-2__upload--preview li{
+    display: flex;
+    flex-wrap: wrap;
+    width: 230px;
+}
+.step-2__upload--preview span{
+    font-size: 18px;
+    line-height: 135.69%;
+    display: block;
+    color: #DF2525; 
+    margin-top: 10px;
+    margin-left: 12px;
+
+}
+.step-2__upload--preview button{
+    color: #9593A0;
+opacity: 0.5;
+font-weight: normal;
+font-size: 16px;
+line-height: 135.69%;
+}
+.sample-passport{
+    height: 530px;
+    border-left: 1px solid rgba(214, 214, 214, 0.5);  
+    padding-left: 43px;
+    margin-left: 43px;
+}
+.sample-passport h4{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135.69%;
+    color: #0C1823;
+    opacity: 0.4; 
+    margin-bottom: 17px;
+}
+.sample-passport img{
+    width: 314px;
+    margin-bottom: 19px;
+}
+.sample-passport li{
+    list-style: disc;
+    color: #DF2525;
+    margin-top: 10px;
+    
+}
+.sample-passport li span{
+    font-size: 18px;
+    line-height: 135.69%;
+    color: #0C1823;  
+}
+.step-3__wrapper{
+    margin-top: 26px;
+}
+.step-3__wrapper-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 57px;
+}
+.step-3__wrapper-inputs input{
+    display: block;
+    margin-right: 60px;
+    margin-top: 10px;
+    padding-left: 34px;
+    color: #9593a0;
+}
+.step-3__wrapper label{
+  margin-top: 22px;  
 }
 // -----------------------------Media
 
