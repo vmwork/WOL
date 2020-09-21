@@ -1274,6 +1274,28 @@ padding-left: 32px;
 .information-land{
     position: relative;
 }
+.information-land ul{
+    position: absolute;
+    border: 1px solid rgba(12, 24, 35, 0.2);
+    background-color: #ffffff;
+    z-index: 10;
+    width: 220px;
+    height: 220px;
+    overflow: auto;
+    padding-left: 34px;
+    color: rgba(12, 24, 35, 0.6);
+    
+}
+#information-land {
+    cursor: pointer;
+}
+.information-land li{
+    cursor: pointer;
+   
+}
+.information-land li:hover{
+    color: #000;
+}
 .information-land:after{
     position: absolute;
     content: "";
@@ -2242,6 +2264,17 @@ line-height: 135.69%;
 }
 .step-3__wrapper label{
   margin-top: 22px;  
+}
+.step-2__wrapper.step-4{
+    flex-direction: row-reverse;
+}
+.step-4 .sample-passport{
+    margin-left: 0;
+    padding-left: 0;
+    border: none;
+    border-right: 1px solid rgba(214,214,214,.5);
+    margin-right: 96px;
+    padding-right: 96px;
 }
 // -----------------------------Media
 

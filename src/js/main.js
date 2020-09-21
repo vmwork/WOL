@@ -192,6 +192,24 @@
                 
               }
               showUploadDocument()
+
+              function chooseLand(){
+                const landButton = document.querySelector('#information-land');
+                const landlist = document.querySelector('.land-list');
+                const landlistChoose = document.querySelectorAll('.land-list li');
+                landButton.addEventListener('click', () =>{
+                  landlist.classList.toggle('hidden')
+                })
+                landlistChoose.forEach(element => {
+                  element.addEventListener('click', () =>{
+                    console.log(element.textContent)
+                    landButton.value = element.textContent
+
+                  })
+                });
+              }
+              chooseLand()
+
 //              function copyLinkReferal(){
 //               const copyLinkButton = document.querySelector('.copy-link-button'),
 //                     copyLinkText = document.querySelector('.copy-link-container'),
