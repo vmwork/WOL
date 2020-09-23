@@ -757,7 +757,7 @@ margin-top: 52px;
     width: 100%;
     min-height: 107px;
     border-bottom: 1px solid rgba(214, 214, 214, 0.5);
-   
+    
     margin-top: 24px;
 }
 .partner-nav__list{
@@ -766,7 +766,7 @@ margin-top: 52px;
     width: 955px;
     margin-top: 15px;
     margin-left: 15px;  
-    
+    flex-wrap: wrap;
     
 }
 .dashboard-header__partner-avatar{
@@ -1271,10 +1271,12 @@ padding-left: 32px;
     margin-bottom: 41px;
     flex-wrap: wrap;
 }
-.information-land{
+.information-land,
+.main-information-name{
     position: relative;
 }
-.information-land ul{
+.information-land ul,
+.main-information-name ul{
     position: absolute;
     border: 1px solid rgba(12, 24, 35, 0.2);
     background-color: #ffffff;
@@ -1286,17 +1288,28 @@ padding-left: 32px;
     color: rgba(12, 24, 35, 0.6);
     
 }
-#information-land {
+.main-information-name ul{
+width: 343px;  
+height: 150px;  
+}
+#information-land,
+#main-information-name {
     cursor: pointer;
 }
-.information-land li{
+.information-land li,
+.main-information-name li{
     cursor: pointer;
    
 }
-.information-land li:hover{
+.main-information-name li{
+    margin-top: 10px;
+}
+.information-land li:hover,
+.main-information-name li:hover{
     color: #000;
 }
-.information-land:after{
+.information-land:after,
+.main-information-name:after{
     position: absolute;
     content: "";
     right: 13px;
@@ -1307,6 +1320,9 @@ padding-left: 32px;
     background-image: url(../images/arrow-balck-down.png);
     background-repeat: no-repeat;
     z-index: 60;
+}
+.main-information-name:after{
+    right: 100px;
 }
 .accept-conditions{
     margin-bottom: 30px;
@@ -2266,6 +2282,7 @@ line-height: 135.69%;
   margin-top: 22px;  
 }
 .step-2__wrapper.step-4{
+    margin-top: 50px;
     flex-direction: row-reverse;
 }
 .step-4 .sample-passport{
@@ -2275,6 +2292,31 @@ line-height: 135.69%;
     border-right: 1px solid rgba(214,214,214,.5);
     margin-right: 96px;
     padding-right: 96px;
+}
+.sample-passport-step-4 h4{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 226.19%; 
+    color: #0C1823!important;
+    opacity: 1;
+}
+.sample-passport-title{
+    width: 220px;
+    display: block;
+    font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.0120588em;
+color: #9593A0;
+margin-bottom: 25px;
+}
+.sample-passport-step-4 li{
+    list-style: none;
+    font-size: 22px;
+margin-bottom: 22px;
+color: #0C1823;
+}
+.next-step-step-4{
+    text-align: left!important;
 }
 // -----------------------------Media
 

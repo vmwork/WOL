@@ -193,11 +193,14 @@
               }
               showUploadDocument()
 
-              function chooseLand(){
-                const landButton = document.querySelector('#information-land');
+              function chooseLand(id){
+                
+                const landButton = document.querySelector(id);
                 const landlist = document.querySelector('.land-list');
                 const landlistChoose = document.querySelectorAll('.land-list li');
-                landButton.addEventListener('click', () =>{
+                try {
+                  landButton.addEventListener('click', (e) =>{
+                  e.preventDefault();
                   landlist.classList.toggle('hidden')
                 })
                 landlistChoose.forEach(element => {
@@ -207,8 +210,11 @@
 
                   })
                 });
+                } catch{}
+                
               }
-              chooseLand()
+              chooseLand('#information-land')
+              chooseLand('#main-information-name')
 
 //              function copyLinkReferal(){
 //               const copyLinkButton = document.querySelector('.copy-link-button'),
