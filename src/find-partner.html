@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/_head.html')
+
+<body>
+  
+    @@include('components/_header.html')
+  
+
+    @@include('components/_safe-partner.html')
+    @@include('components/_productSlider.html')
+  
+  
+    @@include('components/_footer.html')
+  
+    <div class="container-fluid modal-login">
+        <div class="find-partner">
+           <div class="find-partner-header">
+            <h2>Find a partner</h2>
+            <p>Bitte senden Sie Ihre Kontakte und wir bieten Ihnen einen Partner, der Ihnen hilft, in unser gemeinsames Geschäft zu investieren
+            </p>
+        </div> 
+        <div class="find-partner-content">
+            <form action="#.php">
+            <label for="partner-login-email">Vorname, Nachname             
+                <input id="partner-login-email" type="text" required placeholder="Alex Socol">
+            </label>
+            <label for="partner-login-email">Mobilnummer
+                <input id="partner-login-email" type="tel" required placeholder="+40 (0) 768-88-88">
+            </label>
+            <label for="partner-login-email">E-Mail-Adresse
+                <input id="partner-login-email" type="email" required placeholder="ritta@gmail.com">
+            </label>
+            <label for="partner-login-email">Land
+                <input id="partner-login-email" type="text" required placeholder="Germany">
+            </label>
+            <label for="partner-login-email">Stadt
+                <input id="partner-login-email" type="text" required placeholder="Holm">
+            </label>
+
+            <input type="submit" value="Senden">
+        </form>
+        <a href="Return back"></a>
+        </div> 
+        </div>
+        
+      
+       
+      
+      </div>
+
+
+
+    
+    @@include('components/_scripts.html')
+ 
+</body> 
+
+</html>

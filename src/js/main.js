@@ -219,18 +219,34 @@
 
               function showPassword(){
                 const showPassword = document.querySelectorAll('.show-password');
+                const hidePassword = document.querySelectorAll('.hide-password');
                 
                 try{
                   showPassword.forEach(element =>{
+
                     element.addEventListener('click', () =>{
                       
                       if (element.previousElementSibling.type == 'password'){
-                        element.previousElementSibling.type = 'text'
-                      } else {
-                        element.previousElementSibling.type = 'password'
+                        element.previousElementSibling.type = 'text';
+                        element.classList.add('hidden')
+                        element.nextElementSibling.classList.remove('hidden')
                       }
                     })
                   })
+
+                  hidePassword.forEach(element =>{
+
+                    element.addEventListener('click', () =>{
+                      
+                      if (element.previousElementSibling.previousElementSibling.type == 'text'){
+                       
+                        element.previousElementSibling.previousElementSibling.type = 'password';
+                        element.classList.add('hidden')
+                        element.previousElementSibling.classList.remove('hidden')
+                      }
+                    })
+                  })
+                  
                 }catch{
 
                 }
