@@ -216,6 +216,27 @@
               chooseLand('#information-land')
               chooseLand('#main-information-name')
 
+
+              function showPassword(){
+                const showPassword = document.querySelectorAll('.show-password');
+                
+                try{
+                  showPassword.forEach(element =>{
+                    element.addEventListener('click', () =>{
+                      
+                      if (element.previousElementSibling.type == 'password'){
+                        element.previousElementSibling.type = 'text'
+                      } else {
+                        element.previousElementSibling.type = 'password'
+                      }
+                    })
+                  })
+                }catch{
+
+                }
+              }
+              showPassword()
+
 //              function copyLinkReferal(){
 //               const copyLinkButton = document.querySelector('.copy-link-button'),
 //                     copyLinkText = document.querySelector('.copy-link-container'),
