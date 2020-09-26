@@ -2408,7 +2408,192 @@ text-decoration:underline ;
     line-height: 226.19%;
     color: #0C1823;  
 }
+.find-partner{
+    width: 823px;
+  
+    margin: 0 auto;
+    margin-top: 7%;
+    height: 672px;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+.find-partner-header{
+    display: flex;
+    height: 129px;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(149, 147, 160, 0.3);
+   
+}
+.find-partner-header h2{
+  margin-top: 24px;   
+}
+.find-partner-header p{
+    margin-top: 14px;
+    width: 520px;
+    text-align: center;
+    font-weight: normal;
+font-size: 14px;
+line-height: 143.69%;
+color: rgba(12, 24, 35, 0.6);
+}
+.find-partner-content, .registration-partner-content{
+    margin: 0 auto;
+    margin-top: 8px;
+    width: 679px;  
+}
+.find-partner-content-form-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.find-partner-content form, .registration-partner-content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.find-partner-content-form-wrapper label{
+    font-weight: 800;
+font-size: 16px;
+line-height: 226.19%;
+color: #0C1823;
+display: flex;
+flex-direction: column;
+margin-top: 25px;
+}
+.find-partner-content-form-wrapper input{
+    width: 320px;
+    height: 61px; 
+    background: #FFFFFF;
+border: 1px solid rgba(12, 24, 35, 0.2);
+box-sizing: border-box;
+border-radius: 2px;
+padding-left: 32px;
+}
+.find-partner  input[type="submit"]{
 
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 33px;
+    cursor: pointer;
+background: #DF2027;
+border-radius: 2.79959px;
+padding: 16px 138px;
+border: 1px solid #DF2027;
+
+}
+.find-partner  input[type="submit"]:hover{
+    background: #ffffff;
+    color: #DF2027;
+}
+.option-menu{
+    position: relative;
+}
+.option-menu::after{
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 6px;
+    right: 25px;
+    bottom: 30px;
+    background-image: url(../images/arrow-down-gray.png);
+    cursor: pointer;
+}
+.option-menu .land-list{
+    position: absolute;
+    top: 0;
+    margin-top: 96px;
+    background: #FFFFFF;
+    border: 1px solid rgba(12, 24, 35, 0.2);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-left: 32px;
+    width: 320px;
+    height: 151px; 
+    overflow: auto;
+    color: rgba(12, 24, 35, 0.6);
+    font-weight: normal;
+    line-height: 243.69%;
+}
+.option-menu .land-list li{
+    cursor: pointer;
+}
+.option-menu .land-list li:hover{
+    color: #000000;
+}
+.return-back{
+    display: block;
+    width: 90px;
+    
+    margin: 0 auto;
+    color: rgba(12, 24, 35, 0.5);
+    font-weight: normal;
+font-size: 16px;
+line-height: 226.19%;
+margin-top: 12px;
+}
+.return-back:hover{
+    border-bottom: 1px solid rgba(149, 147, 160, 0.3);
+}
+input:focus{
+    border: 1px solid #DF2525!important;
+}
+input:hover:not(input[type=submit]){
+    border: 1px solid #0E2841!important;
+}
+.find-partner-content__thank-for-submit{
+    text-align: center;
+    margin-top: 138px;
+    font-weight: 500;
+font-size: 32px;
+line-height: 44px;
+text-align: center;
+color: #DF2525;
+}
+.find-partner-content__thank-for-submit p{
+    width: 290px;
+}
+.find-partner-registration-header{
+    display: flex;
+    justify-content: center;
+    
+    height: 79px;
+    border-bottom: 1px solid rgba(149, 147, 160, 0.3);
+}
+.find-partner-registration-header h2{
+  margin-top: 24px;
+
+font-size: 22px;
+line-height: 30px;
+color: #0C1823;
+}
+.registration-partner-content{
+    margin-top: 22px;
+}
+.find-partner input{
+    color: rgba(12, 24, 35, 0.6);
+}
+.investor-registration-password  svg{
+    right: 20px;
+}
+.registration-partner-content input[type=submit] {
+
+}
+.partner-registration-login{
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+    color: rgba(12, 24, 35, 0.5);
+    font-weight: normal;
+font-size: 16px;
+line-height: 226.19%;
+margin-top: 12px;
+}
+.partner-registration-login:hover{
+    border-bottom: 1px solid rgba(149, 147, 160, 0.3);
+}
 // -----------------------------Media
 
 @import 'media'

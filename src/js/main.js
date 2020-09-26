@@ -193,19 +193,19 @@
               }
               showUploadDocument()
 
-              function chooseLand(id){
-                
-                const landButton = document.querySelector(id);
-                const landlist = document.querySelector('.land-list');
-                const landlistChoose = document.querySelectorAll('.land-list li');
+              function chooseLand(id, landList){
                 try {
+                const landButton = document.querySelector(id);
+                const landlist = document.querySelector(landList);
+                const landlistChoose = landlist.querySelectorAll('li');
+                
                   landButton.addEventListener('click', (e) =>{
                   e.preventDefault();
                   landlist.classList.toggle('hidden')
                 })
                 landlistChoose.forEach(element => {
                   element.addEventListener('click', () =>{
-                    console.log(element.textContent)
+                 
                     landButton.value = element.textContent
 
                   })
@@ -213,9 +213,10 @@
                 } catch{}
                 
               }
-              chooseLand('#information-land')
-              chooseLand('#main-information-name')
-
+              chooseLand('#information-land', '.land-list')
+              chooseLand('#main-information-name', '.land-list')
+              chooseLand('#partner-login-land', '.land-list')
+              chooseLand('#partner-login-Stadt', '.land-list-2')
 
               function showPassword(){
                 const showPassword = document.querySelectorAll('.show-password');

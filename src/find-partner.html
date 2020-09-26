@@ -22,25 +22,46 @@
         </div> 
         <div class="find-partner-content">
             <form action="#.php">
-            <label for="partner-login-email">Vorname, Nachname             
-                <input id="partner-login-email" type="text" required placeholder="Alex Socol">
+                <div class="find-partner-content-form-wrapper">
+            <label for="partner-login-name">Vorname, Nachname             
+                <input id="partner-login-name" type="text" required placeholder="Alex Socol">
             </label>
-            <label for="partner-login-email">Mobilnummer
-                <input id="partner-login-email" type="tel" required placeholder="+40 (0) 768-88-88">
+            <label for="partner-login-tel">Mobilnummer
+                <input id="partner-login-tel" type="tel" required placeholder="+40 (0) 768-88-88"  minlength="18" maxlength="18">
             </label>
             <label for="partner-login-email">E-Mail-Adresse
                 <input id="partner-login-email" type="email" required placeholder="ritta@gmail.com">
             </label>
-            <label for="partner-login-email">Land
-                <input id="partner-login-email" type="text" required placeholder="Germany">
+            <label class="option-menu " for="partner-login-land">Land
+                <input id="partner-login-land" type="text" required placeholder="Germany">
+                <ul class="land-list hidden">
+                    <li>counry 1</li>
+                    <li>counry 2</li>
+                    <li>counry 3</li>
+                    <li>counry 4</li>
+                    <li>counry 5</li>
+                    <li>counry 6</li>
+                    <li>counry 7</li>
+                    <li>counry 8</li>
+                </ul>
             </label>
-            <label for="partner-login-email">Stadt
-                <input id="partner-login-email" type="text" required placeholder="Holm">
+            <label class="option-menu" for="partner-login-Stadt">Stadt
+                <input id="partner-login-Stadt" type="text" required placeholder="Holm">
+                <ul class="land-list land-list-2 hidden">
+                    <li>counry 1</li>
+                    <li>counry 2</li>
+                    <li>counry 3</li>
+                    <li>counry 4</li>
+                    <li>counry 5</li>
+                    <li>counry 6</li>
+                    <li>counry 7</li>
+                    <li>counry 8</li>
+                </ul>
             </label>
-
+</div>
             <input type="submit" value="Senden">
         </form>
-        <a href="Return back"></a>
+        <a class="return-back" href="#">Return back</a>
         </div> 
         </div>
         
