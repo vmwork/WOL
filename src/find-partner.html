@@ -7,13 +7,13 @@
     @@include('components/_header.html')
   
 
-    @@include('components/_safe-partner.html')
-    @@include('components/_productSlider.html')
+    <!-- @@include('components/_safe-partner.html')
+    @@include('components/_productSlider.html') -->
   
   
-    @@include('components/_footer.html')
-  
-    <div class="container-fluid modal-login">
+    
+  <div class="registration-wrapper">
+    <div class="container-fluid ">
         <div class="find-partner">
            <div class="find-partner-header">
             <h2>Find a partner</h2>
@@ -23,13 +23,13 @@
         <div class="find-partner-content">
             <form action="#.php">
                 <div class="find-partner-content-form-wrapper">
-            <label for="partner-login-name">Vorname, Nachname             
-                <input id="partner-login-name" type="text" required placeholder="Alex Socol">
+            <label class="error-input" for="partner-login-name">Vorname, Nachname             
+                <input  id="partner-login-name" type="text" required placeholder="Alex Socol">
             </label>
             <label for="partner-login-tel">Mobilnummer
                 <input id="partner-login-tel" type="tel" required placeholder="+40 (0) 768-88-88"  minlength="18" maxlength="18">
             </label>
-            <label for="partner-login-email">E-Mail-Adresse
+            <label  for="partner-login-email">E-Mail-Adresse
                 <input id="partner-login-email" type="email" required placeholder="ritta@gmail.com">
             </label>
             <label class="option-menu " for="partner-login-land">Land
@@ -69,10 +69,10 @@
        
       
       </div>
+</div>
 
 
-
-    
+      @@include('components/_footer.html')
     @@include('components/_scripts.html')
  
 </body> 

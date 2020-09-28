@@ -7,18 +7,18 @@
     @@include('components/_header.html')
   
 
-    @@include('components/_safe-partner.html')
-    @@include('components/_productSlider.html')
+    <!-- @@include('components/_safe-partner.html')
+    @@include('components/_productSlider.html') -->
   
   
-    @@include('components/_footer.html')
-  
-    <div class="container-fluid modal-login">
+   
+  <div class="partner-login-wrapper">
+    <div class="container-fluid ">
     
         <div class="row partner-login">
-            <h2>Partner login</h2>
+            <h2>Käufer Login</h2>
             <form action="#.php">
-                <label for="partner-login-email">E-Mail-Adresse
+                <label for="partner-login-email">Username or email address
                     <input id="partner-login-email" type="email" required placeholder="ritta@gmail.com">
                 </label>
                 <label class="partner-login-password" for="partner-login-password" required>Passwort   
@@ -31,19 +31,27 @@
                             </svg>
                         
                 </label>
-                <input type="submit" value="Login">
+                <div class="login-remember-block">
+                    <input type="checkbox" id="login-remember">
+                   <label for="login-remember" class="login-remember">Remember me
+                    
+                </label> 
+                <a href="#">Passwort vergessen?</a>
+                </div>
+                
+                <input type="submit"  value="Login">
                 
             </form>
-            <a href="#">Passwort vergessen?</a>
+            <a href="#">Sign up</a>
 
         </div>
        
       
       </div>
+    </div>
 
 
-
-    
+      @@include('components/_footer.html')
     @@include('components/_scripts.html')
  
 </body> 
