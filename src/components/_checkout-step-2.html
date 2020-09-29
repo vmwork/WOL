@@ -1,0 +1,61 @@
+<div class="container-fluid checkout "> 
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-9 checkout-step-1" >
+            <h2>Checkout</h2>
+            <div class="checkout-progress">
+                <ul>
+                    <li class="checkout-progress-ok line-ok">1. Hauptinformation</li>
+                    <li class="checkout-progress-ok ">2. Adresse</li>
+                    <li> 3. Dokumente</li>
+                    <li> 4. Zusätzliche Information</li>
+                </ul>
+            </div>
+            <form action="action.php" class="form-checkout">
+                <div class="main-information">
+                  
+                    <div class="adress-information">
+
+                        <label class="information-land" for="information-land">Land*
+                         <input type="text" id="information-land" placeholder="Germany" required>
+                        <ul class="land-list hidden">
+                            <li>counry 1</li>
+                            <li>counry 2</li>
+                            <li>counry 3</li>
+                            <li>counry 4</li>
+                            <li>counry 5</li>
+                            <li>counry 6</li>
+                            <li>counry 7</li>
+                            <li>counry 8</li>
+                        </ul>
+                        </label>
+
+                        <label for="information-city">Stadt*
+                        <input type="text" id="information-city" placeholder="Holm" maxlength="35">
+
+                        </label>
+
+                        <label for="information-adres">Adresse*
+                        <input type="text" id="information-adres" placeholder="Street 5, fl,6">
+
+                        </label>
+
+                        <label for="information-plz">LPZ*
+                        <input type="text" id="information-plz" placeholder="398280">
+
+                        </label>
+                    </div>
+                    
+
+                </div>
+               
+                
+                <a href="#" class="next-step-checout">Next</a>
+                <a href="#" class="previos-step-checout">Previous</a>
+            </form>
+            
+        </div>
+    </div>
+</div>

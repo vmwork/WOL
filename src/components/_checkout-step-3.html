@@ -1,0 +1,56 @@
+<div class="container-fluid checkout "> 
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-9 checkout-step-1" >
+            <h2>Checkout</h2>
+            <div class="checkout-progress">
+                <ul>
+                    <li class="checkout-progress-ok line-ok">1. Hauptinformation</li>
+                    <li class="checkout-progress-ok line-ok">2. Adresse</li>
+                    <li class="checkout-progress-ok "> 3. Dokumente</li>
+                    <li> 4. Zusätzliche Information</li>
+                </ul>
+            </div>
+            <form action="action.php" class="form-checkout">
+                <div class="contact-information">
+                    <label for="information-number">Ausweisnummer
+                                              <input type="text" id="information-number" placeholder="993948004">
+
+                    </label>
+
+                    <label for="information-phone" class="vat-optional">Steuernummer/VAT Number 
+                        (optional)
+                    <input type="text" id="information-phone" placeholder="993948004" required>
+
+                    </label>
+
+                    <label  for="information-copy-id">
+                       
+                        Ausweiskopie (optional)
+                    <input class="upload-file" type="file" id="information-copy-id" placeholder="Datei hochladen">
+<div class="upload-file-label">
+<span>  Datei hochladen</span>
+<img src="images/upload.png" alt="upload">
+</div>
+                    </label>
+
+                    <label for="information-current-bill">Aktuelle Rechnung (optional)
+                    <input class="upload-file" type="file" id="information-current-bill" placeholder="Datei hochladen">
+                    <div class="upload-file-label">
+                        <span>  Datei hochladen</span>
+                        <img src="images/upload.png" alt="upload">
+                    </div>
+                    </label>
+                    <span class="stromrechnung">*Stromrechnung, Telefonrechnung</span>
+                </div>
+               
+                
+                <a href="#" class="next-step-checout">Next</a>
+                <a href="#" class="previos-step-checout">Previous</a>
+            </form>
+            
+        </div>
+    </div>
+</div>

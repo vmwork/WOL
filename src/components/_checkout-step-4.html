@@ -1,0 +1,58 @@
+<div class="container-fluid checkout "> 
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-9 checkout-step-1 checkout-step-4" >
+            <h2>Checkout</h2>
+            <div class="checkout-progress">
+                <ul>
+                    <li class="checkout-progress-ok line-ok">1. Hauptinformation</li>
+                    <li class="checkout-progress-ok line-ok">2. Adresse</li>
+                    <li class="checkout-progress-ok line-ok"> 3. Dokumente</li>
+                    <li class="checkout-progress-ok "> 4. Zusätzliche Information</li>
+                </ul>
+            </div>
+            <form action="action.php" class="form-checkout">
+                <div class="contact-information">
+                    <label for="information-number">IBAN (optional)
+                                              <input type="text" id="information-number" placeholder="DE89 3704 0044 0532 0130 00">
+
+                    </label>
+
+                    <label for="information-number">BIC (optional)
+                        <input type="text" id="information-number" placeholder="BCCCCDDTSPARK1">
+
+</label>
+
+<label for="information-number">Name der Bank (optional)
+    <input type="text" id="information-number" placeholder="UNIVERSAL BANK">
+
+</label>   
+                </div>
+                <div class="checout-radio">
+                    <input name="gecauft" type="radio" id="first-radio" checked>
+                    <label for="first-radio">
+
+                        
+                        <span>Ohne Finanzierung<span class="gray"> (Safe wird ohne Finanzierung gekauft)</span></span>
+                    </label>
+                    <input name="gecauft" type="radio" id="second-radio">
+                    <label for="second-radio">
+                        
+                        <span>Mit Finanzierung<span class="gray"> (Safe wird mit Finanzierung gekauft!)</span> </span>
+                    </label>
+                </div>
+                <input type="checkbox" id="checkout-checkbox">
+                    <label for="checkout-checkbox" class="checkout-checkbox">
+                        
+                        <span>Ich akzeptiere die <span class="red">AGB's</span>  und <span class="red">Datenschutz</span>  beim drucken auf den Kaufbutton. </span>
+                    </label>
+                
+                    <input class="form-submit submit-checout " type="submit" value="Jetzt bestellen!">
+                <a href="#" class="previos-step-checout">Previous</a>
+            </form>
+            
+        </div>
+    </div>
+</div>

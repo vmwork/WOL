@@ -1222,7 +1222,8 @@ color: #828282;
 }
 .checkout{
 margin-top: 60px;
-min-height: 1057px;
+// min-height: 457px;
+padding-bottom: 100px;
 }
 .checkout h2{
     font-weight: 900;
@@ -2715,12 +2716,221 @@ color: #0C1823;
     font-weight: 500;
     font-size: 16px;
     line-height: 226.19%;
-    /* or 36px */
-    
-    
-    /* color1 */
-    
+
     color: #0C1823; 
+}
+.checkout-step-1 h2{
+    font-weight: 800;
+    font-size: 33px;
+    line-height: 125.1%;
+    color: #DF2525;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(149, 147, 160, 0.3);
+    padding-right: 150px;
+}
+.checkout-progress{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 226.19%; 
+    color:  rgba(149, 147, 160, 0.5);
+   
+}
+.checkout-progress ul{
+     display: flex;
+     width: 1112px;
+     justify-content: space-between;
+     margin-top: 28px;
+     border: 1px solid rgba(149, 147, 160, 0.5);
+     padding-right: 21px ;
+}
+.checkout-progress .checkout-progress-ok{
+    color: #DF2525;
+}
+.checkout-progress li {
+    position: relative;
+    
+}
+.checkout-progress li:after{
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 1px;
+    right: -100px;
+    top: -30%;
+    background-color:  rgba(149, 147, 160, 0.5);
+     margin-top: 40px;
+}
+.checkout-progress .line-ok:after{
+    background-color:  #DF2525;
+}
+.checkout-progress li:last-child:after {
+    height: 0;
+    width: 0;
+}
+.checkout-step-1 form{
+   
+    width: 1112px;
+}
+.checkout-step-1 input{
+    color: rgba(12, 24, 35, 0.6);
+    
+}
+.checkout-step-1 label{
+    margin-top: 40px; 
+}
+.next-step-checout:hover{
+    color:  #DF2027;
+    background-color: #FFFFFF;
+}
+.next-step-checout, .next-step-checout:active{
+    margin-left: 520px;
+    cursor: pointer;
+    background: #DF2027;
+border-radius: 2.79959px;
+width: 220px;
+height: 54px;
+text-align: center;
+padding-top: 15px;
+display: block;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+border: 1px solid #DF2525;
+}
+.previos-step-checout{
+    margin-left: 520px;
+    cursor: pointer;
+    background: #fff;
+border-radius: 2.79959px;
+width: 220px;
+height: 54px;
+text-align: center;
+padding-top: 15px;
+display: block;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+color: #DF2027;
+}
+.previos-step-checout:hover{
+    border-bottom: 1px solid #DF2525; 
+}
+.vat-optional{
+    line-height: 18px!important;
+    position: relative;
+    top: -10px;
+}
+.vat-optional input{
+    margin-top: 10px;
+}
+.stromrechnung{
+    font-size: 12px;
+    line-height: 226.19%;
+    color: #0C1823;
+    opacity: 0.8;   
+   margin-left: auto;
+   margin-right: 160px;
+}
+.checkout-step-4 input{
+    width: 343px;
+   
+}
+.checkout-step-4 .contact-information{
+    width: 1030px;
+    justify-content: space-between;
+    
+}
+.checout-radio input{
+    display: none;
+}
+.checout-radio label{
+    width: 500px;
+    padding-left: 32px;
+    position: relative;
+    margin-top: 17px;
+    font-size: 16px;
+line-height: 226.19%;
+cursor: pointer;
+    
+}
+.checout-radio label::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #EDEDED, #EDEDED), #C4C4C4;
+    left: 0;
+    top: 5px;
+    
+}
+.checout-radio input:checked+label::after{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #DF2525;
+    left: 5px;
+    top: 10px; 
+  
+}
+.gray{
+    color: #0C1823;
+    opacity: 0.5;   
+}
+.red{
+    color: #DF2525;
+    font-size: 18px;
+line-height: 25px;
+}
+#checkout-checkbox{
+    display: none;
+}
+.checkout-checkbox{
+    width: 650px!important;
+    padding-left: 46px;
+    position: relative;
+    cursor: pointer;
+}
+.checkout-checkbox::before{
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    border-radius: 4px;
+    background: #EDEDED;
+box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+    left: 0;
+    top: 0px;
+}
+#checkout-checkbox:checked+label::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/cheked.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 34px;
+    height: 34px;
+    left: 0;
+    top: 0px; 
+}
+.submit-checout{
+    margin-top: 62px;
+    cursor: pointer;
+    margin-left: 520px;
+    width: 240px!important;
+    margin-bottom: 0!important;
+}
+.submit-checout+a{
+    width: 240px!important; 
+}
+.form-checkout .submit-checout:active{
+    color: #ffffff;
+    background-color: #DF2525;
 }
 // -----------------------------Media
 
