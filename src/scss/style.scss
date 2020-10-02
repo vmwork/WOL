@@ -3206,7 +3206,203 @@ color: rgba(12, 24, 35, 0.4);
 .withdraw-payment__send span{
     color: #df2525;
 }
+.ui-datepicker .ui-widget-header{
+    border: none;
+    background: #ffffff;
+}
+.ui-widget{
+    font-family:'Avenir'!important;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next{
+    display: none;
+}
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 2.3em;
+    line-height: 1.8em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px!important;
+}
+.ui-datepicker {
+    width: 19em!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    
+}
+.ui-datepicker table {
+    width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+    margin-top: 20px!important;
+    margin-bottom: 40px!important;
 
+}
+.ui-datepicker select.ui-datepicker-month,
+ .ui-datepicker select.ui-datepicker-year{
+    width: auto!important;
+    border: none;
+    cursor: pointer;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default{
+    border: 1px solid transparent!important;
+    background: #ffffff!important;
+    width: 29px;
+    height: 29px;
+    padding-top: 5px;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover{
+    background: #FB3F4A!important;
+    border-radius: 50%!important;
+    color: #ffffff!important;
+}
+.ui-datepicker td a{
+    text-align: center!important;
+}
+
+.ui-datepicker-calendar td{
+    width: 29px;
+    height: 29px;
+}
+.ui-datepicker .ui-datepicker-buttonpane{
+    display: none;
+}
+.verification{
+margin-top: 44px;
+padding-left: 72px;
+
+}
+.verification-wrapper{
+  min-height: 206px;  
+  position: relative;
+}
+.kyc-logo{
+    position: absolute;
+    top: -75px;
+    right: 45px;
+}
+.verification h2{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+   display: block;
+    color: #DF2525;  
+}
+.verificated{
+    position: relative;
+    
+
+}
+.verificated::after{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    right: -40px;
+    top: 7px;
+    background-image: url(../images/Verificated-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.verification-process-wrapper ul{
+    display: flex;
+    padding-left: 82px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.verification-process-wrapper  li:not(:first-child){
+margin-left: 90px;
+}
+.verification-process-wrapper  li{
+    position: relative;
+    padding-left: 15px;
+    font-weight: normal;
+font-size: 18px;
+
+color: #0C1823;
+}
+.verification-process-wrapper .verification-item-not-active{
+   opacity: 0.2;
+   
+}
+.verification-process-wrapper  li:before{
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #0C1823;
+    left: -12px;
+}
+.verification-process-wrapper  li:not(:last-child):after{
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 1px;
+    border-radius: 0%;
+    background-color: #0C1823;
+    right: -67px;
+    top: 50%;
+}
+.go-verification{
+    color: #ffffff;
+    display: block;
+    font-weight: 800;
+font-size: 16px;
+line-height: 22px;
+width: 228px;
+height: 54px;
+border: 1px solid #DF2027;
+background-color: #DF2027;
+border-radius: 2.79959px;
+padding-top: 15px;
+
+text-align: center;
+margin-left: 72px;
+margin-top: 30px;
+}
+.verification-process-wrapper .verification-item-not-active.verificated-red{
+    color: #DF2525;
+    opacity: 1;
+}
+.verification-process-wrapper .verification-item-not-active.verificated-red:before{
+    background-color: #DF2027;
+    opacity: 1;
+}
+.verification-process-wrapper
+ .verification-item-not-active.verificated-red:after{
+    background-color: #DF2027;
+    opacity: 1;
+}
+.verification-process-wrapper 
+.verification-item-not-active.verificated-green{
+    color: #54DD13;
+    opacity: 1;
+}
+.verification-process-wrapper
+ .verification-item-not-active.verificated-green:before{
+    background-color: #54DD13;
+    opacity: 1;
+}
+.verification-process-wrapper
+ .verification-item-not-active.verificated-green:after{
+    background-color: #54DD13;
+    opacity: 1;
+}
+.verification-process-wrapper
+ .verification-item-not-active.verificated-gold{
+    color: #C08E00;
+    opacity: 1;
+}
+.verification-process-wrapper
+ .verification-item-not-active.verificated-gold:before{
+    background-color: #C08E00;
+    opacity: 1;
+}
 // -----------------------------Media
 
 @import 'media'
